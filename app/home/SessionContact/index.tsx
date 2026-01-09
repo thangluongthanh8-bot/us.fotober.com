@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 'use client'
 
 import { graphql } from '@/app/__generated__'
@@ -131,7 +132,7 @@ function SessionContact({
   })
 
   const { data: dataCategory } = useQuery<GetListServicesQuery>(GetListServices, {
-    onError: () => {},
+    // onError: () => {},
     fetchPolicy: 'cache-and-network',
   })
 
@@ -390,9 +391,10 @@ function SessionContact({
                       <input {...getInputProps()} />
                       {files?.length > 0 ? (
                         <div className="w-full overflow-y-hidden overflow-x-auto flex flex-row items-center justify-center gap-4 border-[#000000] border-solid border-[1.5px] rounded-[12px] p-4 h-[120px] cursor-pointer">
-                          {files.map((f) => (
+                          {files.map((f,index) => (
                             <div className="flex h-full w-full relative flex-col gap-1">
                               <Image
+                                key={index}
                                 width={64}
                                 height={64}
                                 alt="fotober"
