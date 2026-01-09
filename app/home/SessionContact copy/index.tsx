@@ -1,13 +1,13 @@
 'use client'
 
-import { graphql } from '@/app/__generated__'
-import { GetListServicesQuery } from '@/app/__generated__/graphql'
+import { graphql } from '@/__generated__'
+import { GetListServicesQuery } from '@/__generated__/graphql'
 import Fadein from '@/app/components/animations/Fadein'
 import LightSpeedInLeft from '@/app/components/animations/LightSpeedInLeft'
 import Button from '@/app/components/commons/Button'
 import FormSuccess from '@/app/components/FormSuccess'
 import { clientDirectus } from '@/app/utils/ultils'
-import { useQuery } from '@apollo/client/react' // fix v4 import
+import { useQuery } from '@apollo/client'
 import { uploadFiles, createItem } from '@directus/sdk'
 import Image from 'next/image'
 import Link from 'next/link'

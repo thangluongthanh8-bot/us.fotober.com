@@ -1,6 +1,4 @@
-import ButtonPlaceAnOrder from '@/app/components/ButtonPlaceAnOrder'
-import LayoutMain from '@/app/components/layouts/main'
-import SessionUnderConsideration from '@/app/components/SessionUnderConsideration'
+import LayoutMain from '@/app/components/layout/main'
 import SessionContact from '@/app/home/SessionContact'
 import SessionOutBlogs from '@/app/home/SessionOutBlogs'
 import SessionWhyChoose from '@/app/home/SessionWhyChoose'
@@ -9,6 +7,8 @@ import ExperienceCounter from '@/app/services/component/ExperienceCounter'
 import RealEstateServices from '@/app/services/component/RealEstateServices'
 import SessionSlideServiceCustomer from '@/app/services/component/SessionSlideServiceCustomer'
 import React from 'react'
+import SessionUnderConsiderationWithMockContent from '../components/SessionUnderConsiderationWithMockContent'
+import { dataMockSessionUnderConsideration } from '../utils/ultils'
 
 const ListImage = [
   {
@@ -92,12 +92,12 @@ function ServicePage() {
               <div className="w-full xl:w-[80%] mb-4 lg:mb-6 m-auto lg:h-[600px] 2xl:h-[700px] overflow-hidden lg:-mt-6">
                 <SessionSlideServiceCustomer ListImage={ListImage} />
               </div>
-              <ButtonPlaceAnOrder />
             </div>
           </div>
         </div>
         <div className="py-7">
-          <SessionUnderConsideration isHome />
+          <SessionUnderConsiderationWithMockContent data= {dataMockSessionUnderConsideration} />
+          
         </div>
         <div className="py-7">
           <SessionOutBlogs />
