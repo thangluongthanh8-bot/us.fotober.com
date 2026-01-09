@@ -1,15 +1,11 @@
 @import "tailwindcss";
+@config "../tailwind.config.ts";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg-primary-btn: #febe1f;
+  --bg-primary-btn-hover: #043263;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +18,217 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: montserrat-blank;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+html,
+body,
+#__next {
+  width: 100%;
+  height: auto !important;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 700;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+ul {
+  list-style: unset;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  display: none !important;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  display: none !important;
+}
+
+.slide-consideration .swiper-slide-active-top {
+  padding-left: 15%;
+
+  @media only screen and (max-width: 1024px) {
+    padding-left: 8%;
+  }
+}
+
+.slide-consideration .swiper-slide-next-top {
+  padding-right: 15%;
+
+  @media only screen and (max-width: 1024px) {
+    padding-right: 8%;
+  }
+}
+
+.card-image {
+  transition: transform .195s ease-in-out;
+  border: 3px solid transparent;
+  box-shadow: 0 -12px 36px rgb(0 0 0 / 0%), 0 18px 36px rgb(0 0 0 / 8%), 0 30px 60px rgb(0 0 0 / 20%);
+  overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card-image:hover {
+  box-shadow: 0 -12px 36px rgb(0 0 0 / 0%), 0 18px 36px rgb(0 0 0 / 4%), 0 30px 60px #b9c9da;
+}
+
+.before-after-slider__delimiter-icon:before {
+  border-left: 2px solid;
+  border-top: 2px solid;
+  content: "";
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 0 0;
+  width: 14px;
+  left: 18px;
+  transform: rotate(-226deg);
+}
+
+.before-after-slider img {
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.before-after-slider__delimiter-icon:after {
+  border-left: 2px solid;
+  border-top: 2px solid;
+  content: "";
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 0 0;
+  width: 14px;
+  right: 4px;
+  transform: rotate(-43deg);
+}
+
+.lds-ellipsis,
+.lds-ellipsis div {
+  box-sizing: border-box;
+}
+
+.lds-ellipsis {
+  position: relative;
+  width: 120px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-ellipsis div {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  margin-left: -10px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.btn-bg-primary {
+  background: var(--bg-primary-btn);
+  color:#043263;
 }
