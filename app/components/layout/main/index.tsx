@@ -136,13 +136,13 @@ function LayoutMain({
           className="w-full h-full bg-[#04040473] fixed z-[11]"
         />
       )}
-      {/* {openMenu !== undefined && (
+      {openMenu !== undefined && (
         <div
           aria-hidden
           onClick={() => setOpenMenu(undefined)}
           className="w-full h-full bg-[#04040473] fixed z-[11]"
         />
-      )} */}
+      )}
       <header
         id="main-header"
         className={twMerge(
@@ -317,14 +317,13 @@ function LayoutMain({
                   ]?.map((menu, index) => (
                     <div
                       aria-hidden
-                      onClick={() => {
-                        if (menu.link !== '#') {
-                          void navigateToPage(menu.link)
+                      onClick={(e) => {
+                        // Prevent triggering parent click when clicking children
+                        if (menu.link !== '#' && !menu.child) { 
+                           void navigateToPage(menu.link)
+                        } else {
+                           setOpenMenu((cur) => (cur === index ? undefined : index))
                         }
-                        setOpenMenu((cur) => {
-                          if (cur !== undefined) return undefined
-                          return index
-                        })
                       }}
                       key={`${menu.title}-mobile`}
                       className="cursor-pointer flex flex-col items-start gap-2 relative"

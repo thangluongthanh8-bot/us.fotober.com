@@ -24,11 +24,18 @@ import Icon07 from '@/app/components/SessionUnderConsiderationWithMockContent/as
 import Icon08 from '@/app/components/SessionUnderConsiderationWithMockContent/assets/08.jpg'
 import Icon09 from '@/app/components/SessionUnderConsiderationWithMockContent/assets/09.jpg'
 import Icon10 from '@/app/components/SessionUnderConsiderationWithMockContent/assets/10.jpg'
+import { createDirectus, rest } from '@directus/sdk'
+
+
 export const getImageUrl = (id: string): string => {
   return `https://api-fotober.fotober.com/assets/${id}`
 }
 
-
+export const clientDirectus = createDirectus('https://api-fotober.fotober.com/').with(
+  rest({
+    onRequest: (options) => ({ ...options, cache: 'no-store' }),
+  }),
+)
 export const whatAppsUrl = 'https://wa.me/84987654321'
 export const whatAppsFormat = '+84 987 654 321'
 
