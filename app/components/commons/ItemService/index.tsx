@@ -74,9 +74,10 @@ function ItemService({
       <p className="text-[#043263] text-theme-default lg:text-base xl:text-lg font-bold mt-3 text-center">
         {title}
       </p>
-      <p className="text-[#043263] text-base [-webkit-box-orient:vertical] [display:-webkit-inline-box]  mt-2 text-center  px-5 w-full overflow-hidden [-webkit-line-clamp:2]">
-        {description}
-      </p>
+      <p
+        className="text-[#043263] text-base [-webkit-box-orient:vertical] [display:-webkit-inline-box]  mt-2 text-center  px-5 w-full overflow-hidden [-webkit-line-clamp:2]"
+        dangerouslySetInnerHTML={{ __html: description }}
+      ></p>
        <div className='w-full flex justify-end  pb-3 pr-2'>
         
       <Link

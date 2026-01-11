@@ -7,7 +7,7 @@ import iconEmail from '@/app/assets/icons/icon-email.png'
 import iconAddress from '@/app/assets/icons/address.png'
 import iconChat from '@/app/assets/icons/icon-whatsapp.png'
 import FormSuccess from '@/app/components/FormSuccess'
-import { whatAppsFormat, whatAppsUrl } from '@/app/utils/ultils'
+import { whatAppsFormat, whatAppsUrl, mockSubmitContactForm, USE_STATIC_DATA } from '@/app/utils/ultils'
 import { useMutation } from '@apollo/client/react'
 import Image from 'next/image'
 import React, { useCallback, useState } from 'react'
@@ -32,6 +32,7 @@ const CreateFormContact = graphql(`
 function ContactFrom() {
   const [isErrorSubmitForm, setIsErrorSubmitForm] = useState<boolean>(false)
   const [isSuccess, setIsSuccess] = useState<boolean>(false)
+  const [staticLoading, setStaticLoading] = useState<boolean>(false)
 
   const [createContact, { loading: loadingCreate }] = useMutation<CreateFormContactMutation>(
     CreateFormContact,
@@ -45,6 +46,9 @@ function ContactFrom() {
     },
   )
 
+  // Combined loading state for both static and API modes
+  const loading = USE_STATIC_DATA ? staticLoading : loadingCreate
+
   const {
     register,
     handleSubmit,
@@ -54,6 +58,21 @@ function ContactFrom() {
 
   const onCreateContact: SubmitHandler<FormValues> = React.useCallback(
     async (dataSubmit) => {
+      // Static mode - use mock function
+      if (USE_STATIC_DATA) {
+        setStaticLoading(true)
+        try {
+          await mockSubmitContactForm(dataSubmit)
+          setIsSuccess(true)
+        } catch {
+          setIsErrorSubmitForm(true)
+        } finally {
+          setStaticLoading(false)
+        }
+        return
+      }
+
+      // API mode - original logic
       await createContact({
         variables: {
           data: dataSubmit,
@@ -67,6 +86,7 @@ function ContactFrom() {
     void reset({})
     setIsSuccess(false)
   }, [reset])
+
 
   return (
     <div className="container-custom relative z-30 m-auto w-full flex flex-col md:flex-row justify-between gap-6">
@@ -180,12 +200,12 @@ function ContactFrom() {
                 className="border-[#000000] border-solid border-[1.7px] outline-0 w-full rounded-[12px] p-4 h-[100px] [boxShadow:_5px_5px_5px_0px_#000000a1]"
               />
               <Button
-                disabled={loadingCreate}
-                loading={loadingCreate}
+                disabled={loading}
+                loading={loading}
                 type="submit"
                 title="SUBMIT"
                 showArrow
-                colorArrow= "arow-right-hover"
+                colorArrow="arow-right-hover"
                 className='btn-bg-primary rounded-[12px] p-2 flex text-[#] hover:text-white '
               />
               {isErrorSubmitForm && (

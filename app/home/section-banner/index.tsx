@@ -14,7 +14,7 @@ const SectionBanner = () => {
             <div className="relative z-10 w-full py-35 px-6 md:px-12 lg:px-20 text-white container mx-auto">
                 <div className="max-w-4xl">
                      {/* Title */}
-                     <h1 className="text-6xl md:text-6xl lg:text-7xl font-extrabold uppercase tracking-wide mb-4">
+                     <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold uppercase tracking-wide mb-4">
                         Fotober US LLC
                      </h1>
                      {/* Subtitle */}

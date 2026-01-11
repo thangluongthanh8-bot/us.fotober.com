@@ -3,22 +3,23 @@ import Image from 'next/image';
 import photoEditingImg from './assets/Asset 52.png';
 import videoEditingImg from './assets/Asset 53.png';
 import virtualStagingImg from './assets/Asset 54.png';
+import Link from 'next/link';
 
 const services = [
     {
         title: "PHOTO EDITING SERVICES",
         image: photoEditingImg,
-        link: "#"
+        link: "/photo-editing"
     },
     {
         title: "VIDEO EDITING SERVICES",
         image: videoEditingImg,
-        link: "#"
+        link: "/video-editing"
     },
     {
         title: "VIRTUAL STAGING & ARCHITECTURE DESIGN",
         image: virtualStagingImg,
-        link: "#"
+        link: "/virtual-staging"
     }
 ];
 
@@ -53,7 +54,7 @@ const SectionServices = () => {
                                 {service.title}
                             </h3>
                             <button className="bg-[#003366] hover:bg-[#003366] text-white text-xs font-bold py-2 px-6 rounded uppercase tracking-wider transition-colors shadow-lg">
-                                View More
+                                <Link href={service.link}>View More</Link>
                             </button>
                         </div>
                     </div>
@@ -63,7 +64,9 @@ const SectionServices = () => {
             {/* Bottom Button */}
             <div className="text-center">
                 <button className="bg-[#003366] hover:bg-[#003366] text-white font-bold text-lg py-3 px-5 rounded-md transition-colors shadow-md">
-                    View Full Service Menu
+                    <a href="/video-editing">
+                        View Full Service Menu
+                    </a>
                 </button>
             </div>
         </section>

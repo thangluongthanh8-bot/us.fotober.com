@@ -120,6 +120,12 @@ function LayoutMain({
     }
   }, [])
 
+  // Reset menu states when navigating to a new page
+  useEffect(() => {
+    setOpenMenu(undefined)
+    setOpenMobileMenu(false)
+  }, [pathName])
+
   const navigateToPage = useCallback(
     (linkUrl: string) => {
       void router.push(linkUrl)
@@ -136,11 +142,11 @@ function LayoutMain({
           className="w-full h-full bg-[#04040473] fixed z-[11]"
         />
       )}
-      {openMenu !== undefined && (
+      {openMenu === 0 && (
         <div
           aria-hidden
           onClick={() => setOpenMenu(undefined)}
-          className="w-full h-full bg-[#04040473] fixed z-[11]"
+          className="w-full h-full bg-[#04040473] fixed z-[11] hidden lg:block"
         />
       )}
       <header
@@ -185,7 +191,7 @@ function LayoutMain({
                 className={twMerge(
                   'cursor-pointer flex flex-row items-center gap-2 ',
                   index === 0 ? '' : 'relative',
-                   pathName.startsWith(menu.link) ? 'font-extrabold' : '',
+                  pathName.startsWith(menu.link) ? 'font-extrabold' : '',
                   index === 0 && groupLink.some((i) => i.link.includes(pathName))
                     ? 'font-extrabold'
                     : '',
@@ -225,21 +231,22 @@ function LayoutMain({
                           {item.listChild.map(({ title, icon, description, link, classIcon }) => (
                             <Link key={title} href={link}>
                               {/* <Fadein delay={0.1}> */}
-                                <div className="flex flex-row items-start gap-4 hover:bg-[#04326324] p-2 hover:rounded-[12px]">
-                                  <Image
-                                    alt="fotober"
-                                    src={icon}
-                                    className={twMerge('w-[35px]', classIcon)}
-                                  />
-                                  <div className="flex flex-col">
-                                    <p className="text-[#043263] font-normal leading-[20px] pb-2 text-[18px]">
-                                      {title}
-                                    </p>
-                                    <p className="text-[#000000] text-[11px] font-normal italic">
-                                      {description}
-                                    </p>
-                                  </div>
+                              <div className="flex flex-row items-start gap-4 hover:bg-[#04326324] p-2 hover:rounded-[12px]">
+                                <Image
+                                  alt="fotober"
+                                  src={icon}
+                                  className={twMerge('w-[35px]', classIcon)}
+                                />
+                                <div className="flex flex-col">
+                                  <p className="text-[#043263] font-normal leading-[20px] pb-2 text-[18px]">
+                                    {title}
+                                  </p>
+                                  <p
+                                    className="text-[#000000] text-[11px] font-normal italic"
+                                    dangerouslySetInnerHTML={{ __html: description }}
+                                  ></p>
                                 </div>
+                              </div>
                               {/* </Fadein> */}
                             </Link>
                           ))}
@@ -248,8 +255,8 @@ function LayoutMain({
                     </div>
                   </div>
                 )}
-               
-              
+
+
               </div>
             ))}
           </div>
@@ -257,7 +264,7 @@ function LayoutMain({
             id="action"
             className="flex flex-row items-center gap-6 xl:gap-8 font-montserrat-alternates"
           >
-       
+
           </div>
         </div>
         <div
@@ -272,127 +279,128 @@ function LayoutMain({
               className="h-[25px] xl:h-[34px] object-contain w-fit"
             />
           </Link>
-          {!openMobileMenu && (
-            <div
-              aria-hidden
-              id="toggle-menu"
-              onClick={() => setOpenMobileMenu((cur) => !cur)}
-              className="flex flex-col items-center justify-center w-[28px] h-[30px]"
-            >
-              <div className="w-full h-1 bg-white my-1 transition-transform duration-300 one" />
-              <div className="w-full h-1 bg-white my-1 transition-opacity duration-300 two" />
-              <div className="w-full h-1 bg-white my-1 transition-transform duration-300 three" />
-            </div>
-          )}
-          {openMobileMenu && (
-            <div className="background-mobile-full h-screen overflow-y-scroll p-4">
-              <div className="list-content flex flex-col">
-                <div className="w-full flex flex-row justify-end">
+          <div
+            aria-hidden
+            id="toggle-menu"
+            onClick={() => setOpenMobileMenu((cur) => !cur)}
+            className="flex flex-col items-center justify-center w-[28px] h-[30px] cursor-pointer"
+          >
+            <div className="w-full h-1 bg-white my-1 transition-transform duration-300 one" />
+            <div className="w-full h-1 bg-white my-1 transition-opacity duration-300 two" />
+            <div className="w-full h-1 bg-white my-1 transition-transform duration-300 three" />
+          </div>
+        </div>
+        {/* Mobile Menu Sidebar */}
+        {openMobileMenu && (
+          <div className="fixed top-0 right-0 w-[80%] max-w-[320px] h-screen bg-white z-[200] overflow-y-auto p-4 shadow-2xl lg:hidden animate__animated animate__slideInRight animate__faster">
+            <div className="list-content flex flex-col">
+              <div className="w-full flex flex-row justify-end">
+                <div
+                  aria-hidden
+                  id="toggle-menu-close"
+                  onClick={() => setOpenMobileMenu(false)}
+                  className="flex flex-col items-center justify-center w-[28px] h-[30px] cursor-pointer"
+                >
                   <div
-                    aria-hidden
-                    id="toggle-menu"
-                    onClick={() => setOpenMobileMenu((cur) => !cur)}
-                    className="flex flex-col items-center justify-center w-[28px] h-[30px]"
-                  >
-                    <div
-                      className="w-full h-1 bg-[#017bcf] my-1 transition-transform duration-300 one"
-                      style={{
-                        transform: 'translateY(2px) rotate(-45deg)',
-                        animation: 'animateReverse 600ms ease-in-out',
-                      }}
-                    />
-                    <div
-                      style={{
-                        transform: 'translateY(-10px) rotate(45deg)',
-                        animation: 'animateReverse 600ms ease-in-out',
-                      }}
-                      className="w-full h-1 bg-[#017bcf] my-1 transition-transform duration-300 three"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-3 mt-4">
-                  {[
-                    ...listMenubar
-                    
-                  ]?.map((menu, index) => (
-                    <div
-                      aria-hidden
-                      onClick={(e) => {
-                        // Prevent triggering parent click when clicking children
-                        if (menu.link !== '#' && !menu.child) { 
-                           void navigateToPage(menu.link)
-                        } else {
-                           setOpenMenu((cur) => (cur === index ? undefined : index))
-                        }
-                      }}
-                      key={`${menu.title}-mobile`}
-                      className="cursor-pointer flex flex-col items-start gap-2 relative"
-                    >
-                      <>
-                        <div className="animate__animated animate__fadeInDown animate__fast flex flex-row w-full justify-between">
-                          <span className="text-[#043263] text-base font-semibold font-montserrat-alternates">
-                            {menu.title}
-                          </span>
-
-                          {menu.child && (
-                            <Image
-                              alt="fotober"
-                              src={arrowBlue}
-                              className={twMerge(openMenu === index ? 'rotate-180' : '')}
-                            />
-                          )}
-                        </div>
-                      </>
-
-                      {menu.child && openMenu === index && index === 0 && (
-                        <div className="sub-menu transition font-montserrat duration-500 bg-white min-w-[200px]  rounded-[12px]">
-                          <div className="flex flex-col items-start gap-4">
-                            {listSubMenuService.map((item) => (
-                           <>
-                                <div className="animate__animated animate__fadeInRight column-1 flex flex-col gap-2">
-                                  <div className="flex flex-row gap-3 items-center">
-                                    <div className="h-[16px] bg-[#043263] w-[3px]" />
-                                    <Link
-                                      href={item.link}
-                                      className="font-normal text-lg text-[#043263]"
-                                    >
-                                      {item.title}
-                                    </Link>
-                                  </div>
-                                  {item.listChild.map(({ title, icon, description, link }) => (
-                                    <Link
-                                      key={`${title}-mobile`}
-                                      href={link}
-                                      className="flex flex-row items-start gap-4 hover:bg-[#04326324] p-1 hover:rounded-[12px]"
-                                    >
-                                      <Image alt="fotober" src={icon} className="w-[20px]" />
-                                      <div className="flex flex-col">
-                                        <p className="text-[#043263]  pb-2 text-sm">{title}</p>
-                                        <p className="text-[#000000] text-[10px] italic">
-                                          {description}
-                                        </p>
-                                      </div>
-                                    </Link>
-                                  ))}
-                                </div>
-                           </>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                      
-                    </div>
-                  ))}
+                    className="w-full h-1 bg-[#017bcf] my-1 transition-transform duration-300 one"
+                    style={{
+                      transform: 'translateY(2px) rotate(-45deg)',
+                    }}
+                  />
+                  <div
+                    style={{
+                      transform: 'translateY(-10px) rotate(45deg)',
+                    }}
+                    className="w-full h-1 bg-[#017bcf] my-1 transition-transform duration-300 three"
+                  />
                 </div>
               </div>
+              <div className="flex flex-col gap-3 mt-4">
+                {[
+                  ...listMenubar
+
+                ]?.map((menu, index) => (
+                  <div
+                    aria-hidden
+                    onClick={(e) => {
+                      // Prevent triggering parent click when clicking children
+                      if (menu.link !== '#' && !menu.child) {
+                        void navigateToPage(menu.link)
+                        setOpenMobileMenu(false)
+                      } else {
+                        setOpenMenu((cur) => (cur === index ? undefined : index))
+                      }
+                    }}
+                    key={`${menu.title}-mobile`}
+                    className="cursor-pointer flex flex-col items-start gap-2 relative"
+                  >
+                    <>
+                      <div className="animate__animated animate__fadeInDown animate__fast flex flex-row w-full justify-between">
+                        <span className="text-[#043263] text-base font-semibold font-montserrat-alternates">
+                          {menu.title}
+                        </span>
+
+                        {menu.child && (
+                          <Image
+                            alt="fotober"
+                            src={arrowBlue}
+                            className={twMerge(openMenu === index ? 'rotate-180' : '')}
+                          />
+                        )}
+                      </div>
+                    </>
+
+                    {menu.child && openMenu === index && index === 0 && (
+                      <div className="sub-menu transition font-montserrat duration-500 bg-white min-w-[200px]  rounded-[12px]">
+                        <div className="flex flex-col items-start gap-4">
+                          {listSubMenuService.map((item) => (
+                            <>
+                              <div key={item.title} className="animate__animated animate__fadeInRight column-1 flex flex-col gap-2">
+                                <div className="flex flex-row gap-3 items-center">
+                                  <div className="h-[16px] bg-[#043263] w-[3px]" />
+                                  <Link
+                                    href={item.link}
+                                    onClick={() => setOpenMobileMenu(false)}
+                                    className="font-normal text-lg text-[#043263]"
+                                  >
+                                    {item.title}
+                                  </Link>
+                                </div>
+                                {item.listChild.map(({ title, icon, description, link }) => (
+                                  <Link
+                                    key={`${title}-mobile`}
+                                    href={link}
+                                    onClick={() => setOpenMobileMenu(false)}
+                                    className="flex flex-row items-start gap-4 hover:bg-[#04326324] p-1 hover:rounded-[12px]"
+                                  >
+                                    <Image alt="fotober" src={icon} className="w-[20px]" />
+                                    <div className="flex flex-col">
+                                      <p className="text-[#043263]  pb-2 text-sm">{title}</p>
+                                      <p
+                                        className="text-[#000000] text-[10px] italic"
+                                        dangerouslySetInnerHTML={{ __html: description }}
+                                      ></p>
+                                    </div>
+                                  </Link>
+                                ))}
+                              </div>
+                            </>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                  </div>
+                ))}
+              </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </header>
       <main className="bg-white font-montserrat text-[#043263] relative z-10 overflow-x-hidden">
         {children}
       </main>
-      
+
     </>
   )
 }

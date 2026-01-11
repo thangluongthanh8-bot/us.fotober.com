@@ -7,13 +7,13 @@ import Fadein from '@/app/components/animations/Fadein'
 import LightSpeedInLeft from '@/app/components/animations/LightSpeedInLeft'
 import Button from '@/app/components/commons/Button'
 import FormSuccess from '@/app/components/FormSuccess'
-import { clientDirectus } from '@/app/utils/ultils'
+import { clientDirectus, mockCategories, mockSubmitContactForm, mockUploadFile, USE_STATIC_DATA } from '@/app/utils/ultils'
 import { useQuery } from '@apollo/client/react' // fix v4 import
 import { uploadFiles, createItem } from '@directus/sdk'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { Suspense, useCallback, useEffect, useState } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { SubmitHandler, useFieldArray, useForm } from 'react-hook-form'
 import Turnstile from 'react-turnstile'
@@ -74,7 +74,7 @@ interface FileUploadResponse {
   tags: string | null
 }
 
-function SessionContact({
+function SessionContactContent({
   isHideButton,
   isFromVideoTrial,
 }: {
@@ -134,10 +134,46 @@ function SessionContact({
   const { data: dataCategory } = useQuery<GetListServicesQuery>(GetListServices, {
     // onError: () => {},
     fetchPolicy: 'cache-and-network',
+    skip: USE_STATIC_DATA, // Skip API call when using static data
   })
+
+  // Use mock data or API data based on flag
+  const categories = USE_STATIC_DATA ? mockCategories : dataCategory?.categories
 
   const onCreateContact: SubmitHandler<FormValues> = React.useCallback(
     async (dataSubmit) => {
+      // Static mode - use mock functions
+      if (USE_STATIC_DATA) {
+        setLoading(true)
+        try {
+          // Simulate file uploads if any
+          if (files.length > 0) {
+            await Promise.all(
+              files.map((file) => mockUploadFile(file.fileData))
+            )
+          }
+          // Simulate form submission
+          await mockSubmitContactForm({
+            name: dataSubmit.name,
+            email: dataSubmit.email,
+            phone_number: dataSubmit.phoneNumber,
+            description: dataSubmit?.description,
+            category: dataSubmit.service,
+            list_link_share: dataSubmit?.list_link_share,
+          })
+          setIsSuccess(true)
+          if (!isHideButton) {
+            router.push('/thank-you')
+          }
+        } catch {
+          setIsErrorSubmitForm(true)
+        } finally {
+          setLoading(false)
+        }
+        return
+      }
+
+      // API mode - original logic
       if (files.length > 0) {
         setLoading(true)
         const listImage = (await Promise.all(
@@ -278,7 +314,7 @@ function SessionContact({
           </div>
           {!isHideButton && (
             <Link href="/start-free-trial">
-              <Button className='btn-bg-primary rounded-[5px] p-2 mt-7 w-max' title="MORE ABOUT OUR SERVICES"  />
+              <Button className='btn-bg-primary rounded-[5px] p-2 mt-7 w-max' title="MORE ABOUT OUR SERVICES" />
             </Link>
           )}
         </div>
@@ -366,7 +402,7 @@ function SessionContact({
                   <option value="" disabled hidden>
                     Select services
                   </option>
-                  {dataCategory?.categories?.map((category) => (
+                  {categories?.map((category) => (
                     <option key={category.id} value={category.id}>
                       {category.title}
                     </option>
@@ -391,7 +427,7 @@ function SessionContact({
                       <input {...getInputProps()} />
                       {files?.length > 0 ? (
                         <div className="w-full overflow-y-hidden overflow-x-auto flex flex-row items-center justify-center gap-4 border-[#000000] border-solid border-[1.5px] rounded-[12px] p-4 h-[120px] cursor-pointer">
-                          {files.map((f,index) => (
+                          {files.map((f, index) => (
                             <div className="flex h-full w-full relative flex-col gap-1">
                               <Image
                                 key={index}
@@ -495,6 +531,21 @@ function SessionContact({
         </form>
       </div>
     </div>
+  )
+}
+
+// Wrapper component with Suspense for useSearchParams
+function SessionContact({
+  isHideButton,
+  isFromVideoTrial,
+}: {
+  isHideButton?: boolean
+  isFromVideoTrial?: boolean
+}) {
+  return (
+    <Suspense fallback={<div className="w-full flex justify-center items-center py-10"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#043263]"></div></div>}>
+      <SessionContactContent isHideButton={isHideButton} isFromVideoTrial={isFromVideoTrial} />
+    </Suspense>
   )
 }
 
