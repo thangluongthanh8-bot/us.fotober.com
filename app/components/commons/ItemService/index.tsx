@@ -78,18 +78,18 @@ function ItemService({
         className="text-[#043263] text-base [-webkit-box-orient:vertical] [display:-webkit-inline-box]  mt-2 text-center  px-5 w-full overflow-hidden [-webkit-line-clamp:2]"
         dangerouslySetInnerHTML={{ __html: description }}
       ></p>
-       <div className='w-full flex justify-end  pb-3 pr-2'>
-        
-      <Link
-        href={link?'#':'/contact-us'}
-        className={twMerge(
-          'text-lg group-hover:underline text-[#043263] 2xl:mt-3 px-5 cursor-pointer btn-bg-primary rounded-2xl ',
-        )}
-      >
-         {/* 'text-base block w-full text-center md:text-right group-hover:underline text-[#043263] my-3 px-5 cursor-pointer btn-bg-primary rounded-2xl', */}
-        View service
-      </Link>
-       </div>
+      <div className='w-full flex justify-end  pb-3 pr-2'>
+
+        <Link
+          href={link || '/contact'}
+          className={twMerge(
+            'text-lg group-hover:underline text-[#043263] 2xl:mt-3 px-5 cursor-pointer btn-bg-primary rounded-2xl ',
+          )}
+        >
+          {/* 'text-base block w-full text-center md:text-right group-hover:underline text-[#043263] my-3 px-5 cursor-pointer btn-bg-primary rounded-2xl', */}
+          View service
+        </Link>
+      </div>
     </div>
   )
 }

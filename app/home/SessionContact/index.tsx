@@ -313,7 +313,7 @@ function SessionContactContent({
             <p className="text-[#1A1A1A] text-[21px]">Get the quote</p>
           </div>
           {!isHideButton && (
-            <Link href="/start-free-trial">
+            <Link href="/services">
               <Button className='btn-bg-primary rounded-[5px] p-2 mt-7 w-max' title="MORE ABOUT OUR SERVICES" />
             </Link>
           )}

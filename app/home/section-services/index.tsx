@@ -19,7 +19,7 @@ const services = [
     {
         title: "VIRTUAL STAGING & ARCHITECTURE DESIGN",
         image: virtualStagingImg,
-        link: "/virtual-staging"
+        link: "/architecture-planning-and-virtual-services"
     }
 ];
 
@@ -64,9 +64,9 @@ const SectionServices = () => {
             {/* Bottom Button */}
             <div className="text-center">
                 <button className="bg-[#003366] hover:bg-[#003366] text-white font-bold text-lg py-3 px-5 rounded-md transition-colors shadow-md">
-                    <a href="/video-editing">
+                    <Link href="/services">
                         View Full Service Menu
-                    </a>
+                    </Link>
                 </button>
             </div>
         </section>
