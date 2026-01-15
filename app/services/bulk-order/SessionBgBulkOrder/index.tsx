@@ -31,7 +31,7 @@ function SessionBgBulkOrder() {
           </LazyLoad>
         </div>
       </div>
-      <Image alt="fotober" src={ImageBgHome} className="w-full h-[650px] object-cover" />
+      <Image alt="Fotober US" src={ImageBgHome} className="w-full h-[650px] object-cover" />
     </div>
   )
 }

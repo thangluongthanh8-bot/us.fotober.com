@@ -29,7 +29,7 @@ const InfoImage = ({ imageData }: { imageData: StaticImageData }) => {
       <div className="w-full card-image rounded-[24px]">
         <ZoomImageWrapper src={imageData}>
           <Image
-            alt="fotober"
+            alt="Fotober US"
             src={imageData}
             className="w-full h-[275px] object-cover rounded-[24px]"
           />
@@ -65,35 +65,35 @@ function ListStepYear() {
           />
         </div>
         <div className="hidden md:flex relative min-w-[64px] w-[64px] flex-col">
-          <Image alt="fotober" src={iconAbout1} className="w-[64px]" />
+          <Image alt="Fotober US" src={iconAbout1} className="w-[64px]" />
           <div className="flex flex-col justify-center items-center gap-1">
             {Array.from({ length: 24 }).map((_, i) => {
               const keyMap = `${i}line-1`
               return <div key={keyMap} className="h-[7px] bg-[#043263] w-[3px]" />
             })}
           </div>
-          <Image alt="fotober" src={iconAbout2} className="w-[64px]" />
+          <Image alt="Fotober US" src={iconAbout2} className="w-[64px]" />
           <div className="flex flex-col justify-center items-center gap-1">
             {Array.from({ length: 24 }).map((_, i) => {
               const keyMap = `${i}line-2`
               return <div key={keyMap} className="h-[7px] bg-[#043263] w-[3px]" />
             })}
           </div>
-          <Image alt="fotober" src={iconAbout3} className="w-[64px]" />
+          <Image alt="Fotober US" src={iconAbout3} className="w-[64px]" />
           <div className="flex flex-col justify-center items-center gap-1">
             {Array.from({ length: 24 }).map((_, i) => {
               const keyMap = `${i}line-3`
               return <div key={keyMap} className="h-[7px] bg-[#043263] w-[3px]" />
             })}
           </div>
-          <Image alt="fotober" src={iconAbout4} className="w-[64px]" />
+          <Image alt="Fotober US" src={iconAbout4} className="w-[64px]" />
           <div className="flex flex-col justify-center items-center gap-1">
             {Array.from({ length: 24 }).map((_, i) => {
               const keyMap = `${i}line-4`
               return <div key={keyMap} className="h-[7px] bg-[#043263] w-[3px]" />
             })}
           </div>
-          <Image alt="fotober" src={iconAbout2} className="w-[64px]" />
+          <Image alt="Fotober US" src={iconAbout2} className="w-[64px]" />
           <div className="flex flex-col justify-center items-center gap-1">
             {Array.from({ length: 20 }).map((_, i) => {
               const keyMap = `${i}line-5`
@@ -132,7 +132,7 @@ function ListStepYear() {
             <div className="w-full mt-2 h-auto card-image rounded-[24px]">
               <ZoomImageWrapper src={imageYear2016}>
                 <Image
-                  alt="fotober"
+                  alt="Fotober US"
                   src={imageYear2016}
                   className="w-full h-full object-contain rounded-[24px]"
                 />
@@ -150,7 +150,7 @@ function ListStepYear() {
             <div className="w-full mt-2 h-auto card-image rounded-[24px]">
               <ZoomImageWrapper src={imageYear2018}>
                 <Image
-                  alt="fotober"
+                  alt="Fotober US"
                   src={imageYear2018}
                   className="w-full h-full object-contain rounded-[24px]"
                 />
@@ -167,7 +167,7 @@ function ListStepYear() {
             <div className="w-full mt-2 h-auto card-image rounded-[24px]">
               <ZoomImageWrapper src={imageYear2020}>
                 <Image
-                  alt="fotober"
+                  alt="Fotober US"
                   src={imageYear2020}
                   className="w-full h-full object-contain rounded-[24px]"
                 />
@@ -185,7 +185,7 @@ function ListStepYear() {
             <div className="w-full mt-2 h-auto card-image rounded-[24px]">
               <ZoomImageWrapper src={imageYear2022}>
                 <Image
-                  alt="fotober"
+                  alt="Fotober US"
                   src={imageYear2022}
                   className="w-full h-full object-contain rounded-[24px]"
                 />
@@ -203,7 +203,7 @@ function ListStepYear() {
             <div className="w-full mt-2 h-auto card-image rounded-[24px]">
               <ZoomImageWrapper src={imageYear2022}>
                 <Image
-                  alt="fotober"
+                  alt="Fotober US"
                   src={imageYear2022}
                   className="w-full h-full object-contain rounded-[24px]"
                 />

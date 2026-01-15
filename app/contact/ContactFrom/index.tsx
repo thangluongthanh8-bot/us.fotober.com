@@ -97,14 +97,14 @@ function ContactFrom() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="mailto:support@fotober.com"
+          href="mailto:Luongquan.ftbus@gmail.com"
           data-test-id="contact-info-1"
           className="bg-[#043263] rounded-[16px] p-4"
         >
           <p className="text-[#febe1f] text-lg font-bold">Email</p>
           <div className="flex flex-row gap-4 items-center">
-            <Image alt="fotober" src={iconEmail} className="w-[34px] h-[34px] object-contain" />
-            <p className="text-white font-bold text-sm">support@fotober.com</p>
+            <Image alt="Fotober US" src={iconEmail} className="w-[34px] h-[34px] object-contain" />
+            <p className="text-white font-bold text-sm">Luongquan.ftbus@gmail.com</p>
           </div>
         </a>
         <a
@@ -117,15 +117,15 @@ function ContactFrom() {
         >
           <p className="text-[#febe1f] text-lg font-bold">Whatsapp</p>
           <div className="flex flex-row gap-4 items-center">
-            <Image alt="fotober" src={iconChat} className="w-[34px] h-[34px] object-contain" />
+            <Image alt="Fotober US" src={iconChat} className="w-[34px] h-[34px] object-contain" />
             <p className="text-white font-bold text-sm">{whatAppsFormat}</p>
           </div>
         </a>
         <div data-test-id="contact-info-3" className="bg-[#043263] rounded-[16px] p-4">
           <p className="text-[#febe1f] text-lg font-bold">Address</p>
           <div className="flex flex-row gap-4 items-center">
-            <Image alt="fotober" src={iconAddress} className="w-[34px] h-[34px] object-contain" />
-            <p className="text-white font-bold text-sm">Cau Giay District, Hanoi, Vietnam</p>
+            <Image alt="Fotober US" src={iconAddress} className="w-[34px] h-[34px] object-contain" />
+            <p className="text-white font-bold text-sm">30 N Gould St, Ste R, Sheridan, WY 82801, USA</p>
           </div>
         </div>
       </div>

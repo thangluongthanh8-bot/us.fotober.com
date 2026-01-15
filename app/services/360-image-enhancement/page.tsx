@@ -79,9 +79,9 @@ const dataFaq = [
   },
 ]
 
-const title = '360° Image Enhancement for Real Estate | Fotober'
+const title = '360° Image Enhancement for Real Estate | Fotober US'
 const description =
-  'Enhance real estate listings with Fotober’s 360° image enhancement. Brighten rooms, sharpen details, and showcase true colors to captivate buyers'
+  'Enhance real estate listings with Fotober US\' 360° image enhancement. Brighten rooms, sharpen details, and showcase true colors to captivate buyers'
 
 export const metadata: Metadata = {
   title,
@@ -177,7 +177,7 @@ function Image360EnhancementPage() {
                 className="flex flex-col max-md:gap-4 md:flex-row w-full justify-between"
               >
                 <div className={twMerge('flex flex-row items-start gap-4')}>
-                  <Image alt="fotober" src={iconCheck} className="w-[24px]" />
+                  <Image alt="Fotober US" src={iconCheck} className="w-[24px]" />
                   <p className="whitespace-pre-line font-[500] text-base text-[#000]">
                     {listStep1[index]?.title}
                   </p>
@@ -185,7 +185,7 @@ function Image360EnhancementPage() {
                 <div className={twMerge('flex flex-row items-start gap-4 md:w-[44%] lg:w-[43%]')}>
                   {listStep2[index]?.title ? (
                     <>
-                      <Image alt="fotober" src={iconCheck} className="w-[24px]" />
+                      <Image alt="Fotober US" src={iconCheck} className="w-[24px]" />
                       <p className="whitespace-pre-line font-[500] text-base text-[#000]">
                         {listStep2[index]?.title}
                       </p>
@@ -219,7 +219,7 @@ function Image360EnhancementPage() {
         </div>
         <div className=" pt-10 pb-10 bg-white">
           <div className="container-custom m-auto">
-             <SessionUnderConsiderationWithMockContent  data={dataMockSessionUnderConsideration} />
+            <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
           </div>
         </div>
       </div>

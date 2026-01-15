@@ -86,7 +86,7 @@ const dataFaq = [
 
 const title = 'Real Estate Video Editing to Showcase Stunning Properties'
 const description =
-  'Elevate your real estate listings with Fotober’s professional video editing, creating high-quality videos that leave a lasting impression on buyers.'
+  'Elevate your real estate listings with Fotober US\' professional video editing, creating high-quality videos that leave a lasting impression on buyers.'
 
 export const metadata: Metadata = {
   title,
@@ -124,7 +124,7 @@ function VideoEditingPage() {
                 Real Estate Video Editing
               </h2>
               <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-                At Fotober's Real Estate Video Editing Services, we turn raw footage into capturing
+                At Fotober US' Real Estate Video Editing Services, we turn raw footage into capturing
                 property videos using techniques like advanced color correction for cinematic,
                 natural, or modern tones, smooth transitions, and professional lighting adjustments.
               </p>
@@ -186,7 +186,7 @@ function VideoEditingPage() {
           </div>
           <div className=" pt-10 pb-10 bg-white">
             <div className="container-custom m-auto">
-                  <SessionUnderConsiderationWithMockContent  data={dataMockSessionUnderConsideration} />
+              <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
             </div>
           </div>
         </div>

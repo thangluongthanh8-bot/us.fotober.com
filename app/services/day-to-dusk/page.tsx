@@ -83,7 +83,7 @@ const dataFaq = [
   },
 ]
 
-const title = 'Day to Dusk Photo Editing Service for Real Estate | Fotober'
+const title = 'Day to Dusk Photo Editing Service for Real Estate | Fotober US'
 const description =
   'Enhance your real estate listings with day to dusk photo editing. Create stunning, inviting dusk images to attract more views and potential buyers. Try now!\n'
 
@@ -123,7 +123,7 @@ function DayToDusk() {
                 Day To Dusk
               </h2>
               <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-                Fotober's Day to Dusk service takes property listings to the next level by
+                Fotober US' Day to Dusk service takes property listings to the next level by
                 transforming ordinary daytime photos into stunning dusk visuals. Through expert
                 editing and attention to detail, this service creates a warm and inviting ambiance,
                 highlighting the beauty and unique features of a property, such as outdoor lighting
@@ -181,7 +181,7 @@ function DayToDusk() {
           </div>
           <div className=" pt-10 pb-10 bg-white">
             <div className="container-custom m-auto">
-              <SessionUnderConsiderationWithMockContent  data={dataMockSessionUnderConsideration} />
+              <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
             </div>
           </div>
         </div>

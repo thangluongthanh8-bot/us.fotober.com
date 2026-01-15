@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy and Data Protection | Fotober',
+  title: 'Privacy Policy and Data Protection | Fotober US',
   description:
     'Discover how Fotober collects, uses, and protects your personal data. Our Privacy Policy ensures your information stays secure while using our services.',
 }
@@ -121,7 +121,7 @@ function PrivacyPolicyPage() {
             <p>
               If you would like to change the registration information we hold about you from our
               registration database, you may do so by sending an email message to:&nbsp;
-              <a href="mailto:support@fotober.com">support@fotober.com</a>.
+              <a href="mailto:Luongquan.ftbus@gmail.com">Luongquan.ftbus@gmail.com</a>.
             </p>
           </div>
         </div>

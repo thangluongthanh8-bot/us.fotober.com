@@ -69,7 +69,7 @@ function SessionListVideo({ isHideStep }: { isHideStep?: boolean }) {
             <>
               {item.imageUrl && (
                 <Image
-                  alt="fotober"
+                  alt="Fotober US"
                   width={400}
                   height={400}
                   className="w-full"

@@ -21,7 +21,7 @@ function ItemColab({
         onClick={() => setIsOpen((cur) => !cur)}
       >
         <Image
-          alt="fotober"
+          alt="Fotober US"
           src={isOpen ? iconClose : iconOpen}
           className="object-contain min-w-[24px] max-w-[24px] w-[24px] h-[24px] md:min-w-[35px] md:min-h-[35px] md:w-[35px] md:h-[35px]"
         />

@@ -35,7 +35,7 @@ function SessionIntroPage() {
         <div className="content-right max-md:h-[350px] w-full md:w-[50%]">
           <div className="w-full h-full 2xl:h-[385px] rounded-[12px] object-contain overflow-hidden">
             <Image
-              alt="fotober"
+              alt="Fotober US"
               width={600}
               height={600}
               src={imageOther1}

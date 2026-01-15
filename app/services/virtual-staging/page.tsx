@@ -19,7 +19,7 @@ import SessionUnderConsiderationWithMockContent from '@/app/components/SessionUn
 import LayoutMain from '@/app/components/layout/main'
 import { dataMockSessionUnderConsideration } from '@/app/utils/ultils'
 
-const title = 'Virtual Staging - Transform Vacant Rooms | Fotober'
+const title = 'Virtual Staging - Transform Vacant Rooms | Fotober US'
 const description =
   'Help buyers fall in love with your listings by turning vacant rooms into stylish spaces with our Virtual Staging service. Enhance your property listings.'
 
@@ -170,100 +170,100 @@ const dataFaq = [
 function VirtualStagingPage() {
   return (
     <LayoutMain>
-        <div className="mt-[-112px]">
-          <BannerPage
-            title="Virtual Staging"
-            textDescription="Use realistic digital furnishings and decor to bring empty spaces to life and help buyers envision their future home."
-            imageBg={bannerBg}
-          />
-        </div>
-        <div className="site-content relative pt-[1rem] md:pt-[2rem]">
-          <div className="container-custom m-auto px-4">
-            <div className="mb-5">
-              <h2 className="w-full text-wrap text-center uppercase font-montserrat text-[#043263] font-extrabold text-lg md:text-[23px] md:leading-[45px] my-0">
-                Virtual Staging in Real Estate
-              </h2>
-              <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-                At Fotober's Virtual Staging Services, we bring empty spaces to life with techniques
-                like furniture placement, color scheme adjustments, and décor matching.
-              </p>
-              <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-                We also provide custom interior designs from catalogs, offering multiple style
-                options for each room based on client preferences. This helps buyers easily
-                visualize the property’s potential, making it more attractive and speeding up the
-                sales process without the cost of physical staging.
-              </p>
-            </div>
-            <TitleH3 title="What are the benefits?" />
+      <div className="mt-[-112px]">
+        <BannerPage
+          title="Virtual Staging"
+          textDescription="Use realistic digital furnishings and decor to bring empty spaces to life and help buyers envision their future home."
+          imageBg={bannerBg}
+        />
+      </div>
+      <div className="site-content relative pt-[1rem] md:pt-[2rem]">
+        <div className="container-custom m-auto px-4">
+          <div className="mb-5">
             <h2 className="w-full text-wrap text-center uppercase font-montserrat text-[#043263] font-extrabold text-lg md:text-[23px] md:leading-[45px] my-0">
-              Transform Empty Rooms into Appealing Homes
+              Virtual Staging in Real Estate
             </h2>
-            <div
-              data-test-id="list-description-service"
-              className="justify-center flex flex-row max-xl:flex-wrap gap-6 mt-8 mb-8"
-            >
-              {listContentTop.map((item) => (
-                <ServiceStepDescription
-                  key={item.title}
-                  description={item.description}
-                  title={item.title}
-                  wrapClassName="xl:w-[20%]"
-                  imageIcon={item.icon}
-                />
-              ))}
-            </div>
-            <TitleH3 title=" What do we do?" />
-            <h2 className="w-full text-wrap text-center uppercase font-montserrat text-[#043263] font-extrabold text-lg md:text-[23px] md:leading-[45px] my-0">
-              8 Dream Houses’ Styles
-            </h2>
-            <div className="flex flex-row flex-wrap justify-between items-start mt-8 gap-10">
-              {listSTep?.map((item, index) => (
-                <div
-                  key={item.title}
-                  className="flex flex-row w-full md:w-[46%] items-center justify-between relative"
-                >
-                  <div className="w-full flex flex-col gap-3">
-                    <h4 className="font-montserrat text-[#043263] text-base lg:text-lg 2xl:text-xl font-bold xl:whitespace-nowrap">
-                      {index + 1}. {item.title}
-                    </h4>
-                    <p className="w-full xl:min-h-[100px] font-montserrat text-[#043263] text-base ">
-                      {item.description}
-                    </p>
-                    <BeforeAfterImageSlide
-                      afterImageUrl={item.imageBefore}
-                      beforeImageUrl={item.imageAfter}
-                    />
-                  </div>
+            <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
+              At Fotober US' Virtual Staging Services, we bring empty spaces to life with techniques
+              like furniture placement, color scheme adjustments, and décor matching.
+            </p>
+            <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
+              We also provide custom interior designs from catalogs, offering multiple style
+              options for each room based on client preferences. This helps buyers easily
+              visualize the property’s potential, making it more attractive and speeding up the
+              sales process without the cost of physical staging.
+            </p>
+          </div>
+          <TitleH3 title="What are the benefits?" />
+          <h2 className="w-full text-wrap text-center uppercase font-montserrat text-[#043263] font-extrabold text-lg md:text-[23px] md:leading-[45px] my-0">
+            Transform Empty Rooms into Appealing Homes
+          </h2>
+          <div
+            data-test-id="list-description-service"
+            className="justify-center flex flex-row max-xl:flex-wrap gap-6 mt-8 mb-8"
+          >
+            {listContentTop.map((item) => (
+              <ServiceStepDescription
+                key={item.title}
+                description={item.description}
+                title={item.title}
+                wrapClassName="xl:w-[20%]"
+                imageIcon={item.icon}
+              />
+            ))}
+          </div>
+          <TitleH3 title=" What do we do?" />
+          <h2 className="w-full text-wrap text-center uppercase font-montserrat text-[#043263] font-extrabold text-lg md:text-[23px] md:leading-[45px] my-0">
+            8 Dream Houses’ Styles
+          </h2>
+          <div className="flex flex-row flex-wrap justify-between items-start mt-8 gap-10">
+            {listSTep?.map((item, index) => (
+              <div
+                key={item.title}
+                className="flex flex-row w-full md:w-[46%] items-center justify-between relative"
+              >
+                <div className="w-full flex flex-col gap-3">
+                  <h4 className="font-montserrat text-[#043263] text-base lg:text-lg 2xl:text-xl font-bold xl:whitespace-nowrap">
+                    {index + 1}. {item.title}
+                  </h4>
+                  <p className="w-full xl:min-h-[100px] font-montserrat text-[#043263] text-base ">
+                    {item.description}
+                  </p>
+                  <BeforeAfterImageSlide
+                    afterImageUrl={item.imageBefore}
+                    beforeImageUrl={item.imageAfter}
+                  />
                 </div>
-              ))}
-            </div>
-            <div className="w-full text-center text-[#333333] text-2xl font-semibold my-6" />
-          </div>
-          <div className="w-full bg-[#E8E8E8]">
-            <div className="container m-auto flex flex-col justify-center max-md:px-4 relative">
-              <h2 className="text-[#003366] font-extrabold text-lg md:text-[26px] md:leading-[45px] my-0 py-4 md:py-6 text-center">
-                WHAT OUR CUSTOMERS ARE RECEIVING…
-              </h2>
-              <div className="w-full xl:w-[80%] mb-4 lg:mb-6 m-auto">
-                <SessionSlideVirtualStaging />
               </div>
-              {/* <ButtonPlaceAnOrder /> */}
-            </div>
+            ))}
           </div>
-          <div className="w-full bg-white mt-6">
-            <WrapListService />
-          </div>
-          <div className="mt-6 mb-6 bg-[#E8E8E8]">
-            <div className="container-custom m-auto px-4">
-              <FaqSession title="FAQs about Virtual Staging" data={dataFaq} />
+          <div className="w-full text-center text-[#333333] text-2xl font-semibold my-6" />
+        </div>
+        <div className="w-full bg-[#E8E8E8]">
+          <div className="container m-auto flex flex-col justify-center max-md:px-4 relative">
+            <h2 className="text-[#003366] font-extrabold text-lg md:text-[26px] md:leading-[45px] my-0 py-4 md:py-6 text-center">
+              WHAT OUR CUSTOMERS ARE RECEIVING…
+            </h2>
+            <div className="w-full xl:w-[80%] mb-4 lg:mb-6 m-auto">
+              <SessionSlideVirtualStaging />
             </div>
-          </div>
-          <div className=" pt-10 pb-10 bg-white">
-            <div className="container-custom m-auto">
-              <SessionUnderConsiderationWithMockContent  data={dataMockSessionUnderConsideration} />
-            </div>
+            {/* <ButtonPlaceAnOrder /> */}
           </div>
         </div>
+        <div className="w-full bg-white mt-6">
+          <WrapListService />
+        </div>
+        <div className="mt-6 mb-6 bg-[#E8E8E8]">
+          <div className="container-custom m-auto px-4">
+            <FaqSession title="FAQs about Virtual Staging" data={dataFaq} />
+          </div>
+        </div>
+        <div className=" pt-10 pb-10 bg-white">
+          <div className="container-custom m-auto">
+            <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
+          </div>
+        </div>
+      </div>
     </LayoutMain>
   )
 }

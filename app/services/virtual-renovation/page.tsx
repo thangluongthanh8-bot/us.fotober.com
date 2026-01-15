@@ -175,7 +175,7 @@ function VirtualRenovationPage() {
                 Virtual Renovation
               </h2>
               <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-                At Fotober's Virtual Renovation Services, we bring your
+                At Fotober US' Virtual Renovation Services, we bring your
                 renovation plans to life with 3D modeling, texture mapping, and
                 realistic lighting effects.
               </p>

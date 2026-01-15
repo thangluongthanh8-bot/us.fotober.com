@@ -68,8 +68,8 @@ function ServicePage() {
     <LayoutMain>
       <div className="w-full h-full bg-white text-[#1A1A1A] overflow-hidden mt-[-112px]">
         <BannerService
-          title="Explore Fotober's professional editing services"
-          description="Fotober provides professional services for photographers and marketers, especially in
+          title="Explore Fotober US' professional editing services"
+          description="Fotober US provides professional services for photographers and marketers, especially in
               the real estate sector. Our services include photo editing (image enhancement,
               day-to-dusk conversion, item removal, 360° image enhancement, etc.), video editing
               (real estate video editing, car videos, branding content, event recaps, etc.), and
@@ -96,8 +96,8 @@ function ServicePage() {
           </div>
         </div>
         <div className="py-7">
-          <SessionUnderConsiderationWithMockContent data= {dataMockSessionUnderConsideration} />
-          
+          <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
+
         </div>
         <div className="py-7">
           <SessionOutBlogs />

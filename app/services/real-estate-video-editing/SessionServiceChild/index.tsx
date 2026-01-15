@@ -51,7 +51,7 @@ function SessionServiceChild() {
               className={twMerge(
                 'w-full h-[250px] 2xl:h-[385px] rounded-tl-[12px] rounded-tr-[12px] object-cover overflow-hidden',
               )}
-              title="fotober"
+              title="Fotober US"
               opts={{
                 playerVars: {
                   autoplay: 0,

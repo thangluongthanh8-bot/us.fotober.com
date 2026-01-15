@@ -94,9 +94,9 @@ const ListImage = [
   },
 ]
 
-const title = 'Photo Editing Services for Real Estate | Fotober'
+const title = 'Photo Editing Services for Real Estate | Fotober US'
 const description =
-  'Enhance your photos with Fotober’s professional photo editing services. Perfect for real estate, products, or personal images that captivate and impress.'
+  'Enhance your photos with Fotober US\' professional photo editing services. Perfect for real estate, products, or personal images that captivate and impress.'
 
 export const metadata: Metadata = {
   title,

@@ -163,7 +163,7 @@ function LayoutMain({
         >
           <Link href="/">
             <Image
-              alt="fotober"
+              alt="Fotober US"
               src={logoImage}
               loading="eager"
               className="h-[25px] xl:h-[34px] object-contain w-fit"
@@ -200,9 +200,9 @@ function LayoutMain({
                 {index === 0 ? (
                   <Link href={menu.link} prefetch={false}>
 
-                  <span className="text-white text-lg font-montserrat-blank">
-                    {menu.title}
-                  </span>
+                    <span className="text-white text-lg font-montserrat-blank">
+                      {menu.title}
+                    </span>
                   </Link>
                 ) : (
                   <Link href={menu.link} prefetch={false}>
@@ -212,7 +212,7 @@ function LayoutMain({
                   </Link>
                 )}
 
-                {menu.child && <Image alt="fotober" src={arrow} />}
+                {menu.child && <Image alt="Fotober US" src={arrow} />}
                 {menu.child && openMenu === index && index === 0 && (
                   <div
                     onMouseEnter={() => setOpenMenu(index)}
@@ -236,7 +236,7 @@ function LayoutMain({
                               {/* <Fadein delay={0.1}> */}
                               <div className="flex flex-row items-start gap-4 hover:bg-[#04326324] p-2 hover:rounded-[12px]">
                                 <Image
-                                  alt="fotober"
+                                  alt="Fotober US"
                                   src={icon}
                                   className={twMerge('w-[35px]', classIcon)}
                                 />
@@ -276,7 +276,7 @@ function LayoutMain({
         >
           <Link href="/">
             <Image
-              alt="fotober"
+              alt="Fotober US"
               width={50}
               src={logoImage}
               className="h-[25px] xl:h-[34px] object-contain w-fit"
@@ -345,7 +345,7 @@ function LayoutMain({
 
                         {menu.child && (
                           <Image
-                            alt="fotober"
+                            alt="Fotober US"
                             src={arrowBlue}
                             className={twMerge(openMenu === index ? 'rotate-180' : '')}
                           />
@@ -376,7 +376,7 @@ function LayoutMain({
                                     onClick={() => setOpenMobileMenu(false)}
                                     className="flex flex-row items-start gap-4 hover:bg-[#04326324] p-1 hover:rounded-[12px]"
                                   >
-                                    <Image alt="fotober" src={icon} className="w-[20px]" />
+                                    <Image alt="Fotober US" src={icon} className="w-[20px]" />
                                     <div className="flex flex-col">
                                       <p className="text-[#043263]  pb-2 text-sm">{title}</p>
                                       <p

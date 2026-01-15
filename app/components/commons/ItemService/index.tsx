@@ -41,7 +41,7 @@ function ItemService({
       )}
       {imageThumbId && (
         <Image
-          alt="fotober"
+          alt="Fotober US"
           width={350}
           height={350}
           src={getImageUrl(imageThumbId)}
@@ -58,7 +58,7 @@ function ItemService({
           <YoutubeEmbed
             videoId={videoThumbId}
             className="w-full h-full rounded-tl-[12px] rounded-tr-[12px] object-cover  overflow-hidden"
-            title="fotober"
+            title="Fotober US"
             opts={{
               playerVars: {
                 autoplay: 0,

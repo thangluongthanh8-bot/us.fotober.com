@@ -109,7 +109,7 @@ const dataFaq = [
   },
 ]
 
-const title = 'Item Removal Service for Real Estate Photos | Fotober'
+const title = 'Item Removal Service for Real Estate Photos | Fotober US'
 const description =
   'Fotober’s Item Removal Service cleans real estate photos by removing unwanted objects, enhancing visual appeal for stunning, professional images.'
 
@@ -226,7 +226,7 @@ function ItemRemovalPage() {
           </div>
           <div className=" pt-10 pb-10 bg-white">
             <div className="container-custom m-auto">
-             <SessionUnderConsiderationWithMockContent  data={dataMockSessionUnderConsideration} />
+              <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
             </div>
           </div>
         </div>

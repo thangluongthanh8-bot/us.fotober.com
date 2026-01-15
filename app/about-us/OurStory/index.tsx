@@ -6,7 +6,7 @@ function OurStory() {
   return (
     <div className="mt-8 w-full relative overflow-hidden">
       <div className="absolute w-full h-full bg-[#00000091] z-10" />
-      <Image alt="fotober" src={bgTeam} className="w-full h-full absolute z-0  object-cover" />
+      <Image alt="Fotober US" src={bgTeam} className="w-full h-full absolute z-0  object-cover" />
       <div className="container-custom relative z-20 m-auto">
         <h2 className="w-full pt-8 relative z-20 text-wrap text-center uppercase font-montserrat text-white font-extrabold text-xl md:text-[28px] leading-[54px]">
           OUR STORY

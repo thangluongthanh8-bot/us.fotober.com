@@ -34,7 +34,7 @@ function WrapListService() {
 
   return (
     <div className="container-custom m-auto px-4">
-      <TitleH3 title="What can you find at Fotober?" />
+      <TitleH3 title="What can you find at Fotober US?" />
       <h3 className="text-[#003366] font-extrabold text-xl md:text-[26px] md:leading-[45px]  text-center">
         EXPLORE ALL SERVICES
       </h3>

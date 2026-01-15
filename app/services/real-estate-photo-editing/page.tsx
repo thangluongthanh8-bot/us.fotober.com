@@ -117,9 +117,9 @@ const dataFaq = [
   },
 ]
 
-const title = 'Fotober - Real Estate Photo Editing'
+const title = 'Fotober US - Real Estate Photo Editing'
 const description =
-  "Enhance your real estate images with Fotober's professional photo editing services. Get stunning, high-quality edits that help your properties stand out."
+  "Enhance your real estate images with Fotober US' professional photo editing services. Get stunning, high-quality edits that help your properties stand out."
 
 const jsonSchema = {
   '@context': 'https://schema.org',
@@ -327,7 +327,7 @@ function ImageEnhancementPage() {
           </div>
           <div className=" pt-10 pb-10 bg-white">
             <div className="container-custom m-auto">
-               <SessionUnderConsiderationWithMockContent  data={dataMockSessionUnderConsideration} />
+              <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
             </div>
           </div>
         </div>

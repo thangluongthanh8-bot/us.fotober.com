@@ -55,7 +55,7 @@ const CounterItem: React.FC<CounterItemProps> = ({ icon, endValue, label, suffix
       <div className="w-16 h-16 mb-4 text-blue-500">
         <Image
           src={icon}
-          alt="fotober"
+          alt="Fotober US"
           className="w-full h-full object-contain"
           objectFit="contain"
         />

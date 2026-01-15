@@ -40,7 +40,7 @@ const services = [
     animationDelay: 0.5,
   },
 ]
-const title = 'Architecture Planning & Virtual Services | Fotober'
+const title = 'Architecture Planning & Virtual Services | Fotober US'
 const description =
   'Transform your architectural projects with Fotober. Expert virtual planning, 3D modeling, and design visualization to bring your ideas to life.'
 

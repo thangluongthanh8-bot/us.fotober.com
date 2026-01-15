@@ -117,7 +117,7 @@ const dataFaq = [
 
 const title = "Virtual Rendering for Real Estate: Elevate Every Property\n";
 const description =
-  "Showcase your unbuilt property with Fotober’s Virtual Rendering service. Use 3D renderings to visualize concepts and impress potential buyers.";
+  "Showcase your unbuilt property with Fotober US' Virtual Rendering service. Use 3D renderings to visualize concepts and impress potential buyers.";
 
 export const metadata: Metadata = {
   title,
@@ -154,7 +154,7 @@ function Rendering() {
                 Virtual Rendering
               </h2>
               <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-                At Fotober's Virtual Rendering in Real Estate Services, we
+                At Fotober US' Virtual Rendering in Real Estate Services, we
                 transform blueprints into lifelike visualizations using
                 techniques like 3D modeling, texture mapping, lighting effects,
                 and virtual staging.
@@ -216,7 +216,7 @@ function Rendering() {
                       <>
                         {item.image && (
                           <Image
-                            alt="fotober"
+                            alt="Fotober US"
                             width={1000}
                             height={500}
                             src={item.image}

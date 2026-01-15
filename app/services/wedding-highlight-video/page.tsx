@@ -105,9 +105,9 @@ const dataFaq = [
   },
 ];
 
-const title = "Personal Branding Video & Photo Services | Fotober";
+const title = "Personal Branding Video & Photo Services | Fotober US";
 const description =
-  "Elevate your personal brand with Fotober’s expert video and photo services. Create professional, impactful visuals that boost your online presence.";
+  "Elevate your personal brand with Fotober US' expert video and photo services. Create professional, impactful visuals that boost your online presence.";
 
 export const metadata: Metadata = {
   title,
@@ -144,7 +144,7 @@ function PersonalBrandingPage() {
               Personal Branding Editing
             </h2>
             <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-              At Fotober's Personal Branding Editing Services, we enhance your
+              At Fotober US' Personal Branding Editing Services, we enhance your
               public image using advanced video editing techniques like jump
               cuts, smooth transitions, slow-motion effects and color grading.
             </p>
@@ -189,7 +189,7 @@ function PersonalBrandingPage() {
                     index === 5 ? "xl:-mt-6" : ""
                   )}
                 >
-                  <Image alt="fotober" src={iconCheck} className="w-[24px]" />
+                  <Image alt="Fotober US" src={iconCheck} className="w-[24px]" />
                   <p className="whitespace-pre-line font-[500] text-base text-[#000]">
                     {listStep1[index]?.title}
                   </p>
@@ -202,7 +202,7 @@ function PersonalBrandingPage() {
                   {listStep2[index]?.title ? (
                     <>
                       <Image
-                        alt="fotober"
+                        alt="Fotober US"
                         src={iconCheck}
                         className="w-[24px]"
                       />

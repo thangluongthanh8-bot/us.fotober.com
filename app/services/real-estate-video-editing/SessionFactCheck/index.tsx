@@ -8,7 +8,7 @@ function SessionFactCheck() {
     <YoutubeEmbed
       videoId="5rVNUNAqGM4"
       className="w-full h-[215px] md:h-[550px] rounded-tl-[12px] rounded-tr-[12px] object-cover"
-      title="fotober"
+      title="Fotober US"
       opts={{
         playerVars: {
           autoplay: 0,

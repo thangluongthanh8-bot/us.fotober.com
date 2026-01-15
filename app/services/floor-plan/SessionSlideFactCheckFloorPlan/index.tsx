@@ -151,7 +151,7 @@ function SessionSlideFactCheckFloorPlan() {
             return (
               <SwiperSlide key={keyMap}>
                 <Image
-                  alt="fotober"
+                  alt="Fotober US"
                   priority
                   src={item}
                   className="w-full overflow-hidden max-md:h-[250px] h-auto max-h-[500px] object-contain"

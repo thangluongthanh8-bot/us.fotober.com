@@ -106,7 +106,7 @@ function SessionSlideRender() {
           {listImage.map((item) => (
             <SwiperSlide key={`${item.title}-items-post-2`}>
               <Image
-                alt="fotober"
+                alt="Fotober US"
                 priority
                 src={item.imageData}
                 className="w-full h-auto max-h-[700px] object-contain"

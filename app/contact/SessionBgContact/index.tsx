@@ -24,7 +24,7 @@ function SessionBgContact() {
           </div>
         </div>
       </div>
-      <Image alt="fotober" src={ImageBgHome} className="w-full h-[350px] md:h-[450px] lg:h-[650px] object-cover" />
+      <Image alt="Fotober US" src={ImageBgHome} className="w-full h-[350px] md:h-[450px] lg:h-[650px] object-cover" />
     </div>
   )
 }

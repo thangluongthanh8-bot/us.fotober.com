@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
 
-const title = 'About Us - Fotober | Real Estate Photo And Video Editing.'
+const title = 'About Us - Fotober US | Real Estate Photo And Video Editing.'
 const description =
   'Discover Fotober, a leader in real estate photo and video services. Learn about our mission, expertise, and how we help properties stand out visually.'
 

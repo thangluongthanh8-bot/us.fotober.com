@@ -299,17 +299,17 @@ function SessionContactContent({
             </p>
           </Fadein>
           <div className="flex flex-row items-center gap-4 pt-6">
-            <Image alt="fotober" src={imageStep1} className="w-[45px] h-[45px]" />
+            <Image alt="Fotober US" src={imageStep1} className="w-[45px] h-[45px]" />
             <p className="text-[#1A1A1A] text-[21px]">Fill the form</p>
           </div>
           <div className="flex flex-row items-center gap-4 pt-4">
-            <Image alt="fotober" src={imageStep2} className="w-[45px] h-[45px]" />
+            <Image alt="Fotober US" src={imageStep2} className="w-[45px] h-[45px]" />
             <p className="text-[#1A1A1A] text-[21px]">
               {isFromVideoTrial ? 'Share a link video' : 'Upload the images'}
             </p>
           </div>
           <div className="flex flex-row items-center gap-4 pt-4">
-            <Image alt="fotober" src={imageStep3} className="w-[45px] h-[45px]" />
+            <Image alt="Fotober US" src={imageStep3} className="w-[45px] h-[45px]" />
             <p className="text-[#1A1A1A] text-[21px]">Get the quote</p>
           </div>
           {!isHideButton && (
@@ -433,7 +433,7 @@ function SessionContactContent({
                                 key={index}
                                 width={64}
                                 height={64}
-                                alt="fotober"
+                                alt="Fotober US"
                                 src={f.preview}
                                 className="h-full w-full object-contain relative"
                               />
@@ -449,9 +449,9 @@ function SessionContactContent({
                               : 'border-[#000000]',
                           )}
                         >
-                          <Image alt="fotober" src={iconUpload} className="w-[35px] h-[25px]" />
+                          <Image alt="Fotober US" src={iconUpload} className="w-[35px] h-[25px]" />
                           <div className="flex flex-row items-center border-[#000000] gap-3 rounded-[12px] border-solid border-[1px] p-2">
-                            <Image alt="fotober" src={iconUpload1} className="w-[16px] h-[16px]" />
+                            <Image alt="Fotober US" src={iconUpload1} className="w-[16px] h-[16px]" />
                             <p className="text-base text-[#043263] font-semibold">Upload photo </p>
                           </div>
                         </div>

@@ -75,7 +75,7 @@ function SessionWhyChoose() {
                         indexHover === index ? 'animate__swing' : '',
                       )}
                     >
-                      <Image alt="fotober" src={icon} className="w-[64px]" />
+                      <Image alt="Fotober US" src={icon} className="w-[64px]" />
                     </div>
                   </LazyLoad>
                   <p className="text-[#043263] font-bold text-[21px]">{title}</p>

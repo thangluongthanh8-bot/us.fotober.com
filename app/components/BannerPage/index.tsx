@@ -45,11 +45,11 @@ function BannerPage({
             </div>
           </LazyLoad>
         </div>
-       
+
       </div>
       {imageBg && (
         <Image
-          alt="fotober"
+          alt="Fotober US"
           src={imageBg}
           loading="eager"
           quality={70}

@@ -99,9 +99,9 @@ const dataFaq = [
   },
 ]
 
-const title = 'Car Video Editing Services to Impress and Inspire | Fotober'
+const title = 'Car Video Editing Services to Impress and Inspire | Fotober US'
 const description =
-  'Enhance your car videos with Fotober’s Car Video Editing service. Use dynamic shots, special effects, and professional sound design to make them stand out.'
+  'Enhance your car videos with Fotober US\' Car Video Editing service. Use dynamic shots, special effects, and professional sound design to make them stand out.'
 
 export const metadata: Metadata = {
   title,
@@ -137,7 +137,7 @@ function CarVideoEditingPage() {
               Car video editing
             </h2>
             <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-              At Fotober's Car Video Editing Services, we use advanced techniques like glow effects,
+              At Fotober US' Car Video Editing Services, we use advanced techniques like glow effects,
               logo transitions, speed ramp, saber lines, and logo spins to enhance the power, speed,
               and luxury of your vehicle.
             </p>
@@ -181,7 +181,7 @@ function CarVideoEditingPage() {
                     index === 5 ? 'xl:-mt-6' : '',
                   )}
                 >
-                  <Image alt="fotober" src={iconCheck} className="w-[24px]" />
+                  <Image alt="Fotober US" src={iconCheck} className="w-[24px]" />
                   <p className="whitespace-pre-line font-[500] text-base text-[#000]">
                     {listStep1[index]?.title}
                   </p>
@@ -189,7 +189,7 @@ function CarVideoEditingPage() {
                 <div className={twMerge('flex flex-row items-start gap-4 md:w-[44%] lg:w-[42%]')}>
                   {listStep2[index]?.title ? (
                     <>
-                      <Image alt="fotober" src={iconCheck} className="w-[24px]" />
+                      <Image alt="Fotober US" src={iconCheck} className="w-[24px]" />
                       <p className="whitespace-pre-line font-[500] text-base text-[#000]">
                         {listStep2[index]?.title}
                       </p>
@@ -223,7 +223,7 @@ function CarVideoEditingPage() {
         </div>
         <div className=" pt-10 pb-10 bg-white">
           <div className="container-custom m-auto">
-            <SessionUnderConsiderationWithMockContent  data={dataMockSessionUnderConsideration} />
+            <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
           </div>
         </div>
       </div>

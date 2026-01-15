@@ -67,7 +67,7 @@ function SlideTeam() {
             return (
               <SwiperSlide key={keyMap}>
                 <Image
-                  alt="fotober"
+                  alt="Fotober US"
                   src={item}
                   priority
                   width={1000}

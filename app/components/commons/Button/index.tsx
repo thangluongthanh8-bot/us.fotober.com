@@ -68,7 +68,7 @@ function Button({
           </div>
           {showArrow && (
             <Image
-              alt="fotober"
+              alt="Fotober US"
               // src={isHover ? arrowRightHover : arrowRight}
               src={arrowIcon}
               className="w-[24px] ml-1  "

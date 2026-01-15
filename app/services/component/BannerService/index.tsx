@@ -55,7 +55,7 @@ function BannerService({ title, description }: { title: string; description: str
         </LazyLoad>
       </div>
       <Image
-        alt="fotober"
+        alt="Fotober US"
         src={ImageBgHome}
         loading="eager"
         width={650}

@@ -131,7 +131,7 @@ const dataFaq = [
   },
 ]
 
-const title = '2D & 3D Floor Plans - Detailed Real Estate Layouts | Fotober'
+const title = '2D & 3D Floor Plans - Detailed Real Estate Layouts | Fotober US'
 const description =
   'Create stunning 2D/3D floor plans for real estate with Fotober. Visualize layouts, compare properties, and plan renovations with accurate, detailed designs.'
 
@@ -218,7 +218,7 @@ function FloorPlanRedraw() {
                     </p>
                     <div className="xl:min-h-[350px]">
                       <Image
-                        alt="fotober"
+                        alt="Fotober US"
                         width={1000}
                         height={500}
                         src={item.image}
@@ -251,7 +251,7 @@ function FloorPlanRedraw() {
           </div>
           <div className=" pt-10 pb-10 bg-white">
             <div className="container-custom m-auto">
-                 <SessionUnderConsiderationWithMockContent  data={dataMockSessionUnderConsideration} />
+              <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
             </div>
           </div>
         </div>

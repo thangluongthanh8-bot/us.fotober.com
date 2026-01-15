@@ -34,7 +34,7 @@ function ServiceStepDescription({
           indexHover ? 'animate__swing' : '',
         )}
       >
-        <Image alt="fotober" src={imageIcon} className="h-[45px] object-contain" />
+        <Image alt="Fotober US" src={imageIcon} className="h-[45px] object-contain" />
       </div>
       <div className="flex flex-col justify-center items-start md:items-center">
         <div className={twMerge('md:h-[60px] flex flex-row items-start', customCssTitle)}>

@@ -10,9 +10,9 @@ import React from 'react'
 import SessionUnderConsiderationWithMockContent from '../components/SessionUnderConsiderationWithMockContent'
 import { dataMockSessionUnderConsideration } from '../utils/ultils'
 
-const title = 'Video Editing Services for Real Estate | Fotober'
+const title = 'Video Editing Services for Real Estate | Fotober US'
 const description =
-  'Transform your footage with Fotober’s professional video editing services. Perfect for real estate, cars, events, and personal branding videos.'
+  "Transform your footage with Fotober US' professional video editing services. Perfect for real estate, cars, events, and personal branding videos."
 
 export const metadata: Metadata = {
   title,

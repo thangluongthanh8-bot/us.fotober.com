@@ -36,7 +36,7 @@ function SessionIntroPage() {
             <YoutubeEmbed
               videoId="uypB0sIniCs"
               className="w-full max-md:h-[250px] md:h-full 2xl:h-[300px] rounded-tl-[12px] rounded-tr-[12px] object-cover"
-              title="fotober"
+              title="Fotober US"
               opts={{
                 playerVars: {
                   autoplay: 0,

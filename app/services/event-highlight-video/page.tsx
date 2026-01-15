@@ -93,7 +93,7 @@ const listStep2 = [
   { title: 'Delivery of Branded and \n Unbranded MLS Compliant Video' },
 ]
 
-const title = 'Event Recap Services - Capture Key Moments | Fotober'
+const title = 'Event Recap Services - Capture Key Moments | Fotober US'
 const description =
   'Capture unforgettable moments with our event recap services. Professionally edited videos that highlight key moments and boost engagement. Try now!\n'
 
@@ -131,7 +131,7 @@ function EventRecapPage() {
               Event Recap
             </h2>
             <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-              Fotober's Event Recap service transforms raw event footage into polished, engaging
+              Fotober US' Event Recap service transforms raw event footage into polished, engaging
               videos that capture the essence of your event. This service uses advanced editing
               techniques for noise and judder removal, slow motion, emotional emphasis, color
               grading, and people highlighting. Every key moment, from highlights to atmosphere, is
@@ -178,7 +178,7 @@ function EventRecapPage() {
                     index === 5 ? 'xl:-mt-6' : '',
                   )}
                 >
-                  <Image alt="fotober" src={iconCheck} className="w-[24px]" />
+                  <Image alt="Fotober US" src={iconCheck} className="w-[24px]" />
                   <p className="whitespace-pre-line font-[500] text-base text-[#000]">
                     {listStep1[index]?.title}
                   </p>
@@ -186,7 +186,7 @@ function EventRecapPage() {
                 <div className={twMerge('flex flex-row items-start gap-4 md:w-[44%] lg:w-[42%]')}>
                   {listStep2[index]?.title ? (
                     <>
-                      <Image alt="fotober" src={iconCheck} className="w-[24px]" />
+                      <Image alt="Fotober US" src={iconCheck} className="w-[24px]" />
                       <p className="whitespace-pre-line font-[500] text-base text-[#000]">
                         {listStep2[index]?.title}
                       </p>
@@ -220,7 +220,7 @@ function EventRecapPage() {
         </div>
         <div className=" pt-10 pb-10 bg-white">
           <div className="container-custom m-auto">
-            <SessionUnderConsiderationWithMockContent  data={dataMockSessionUnderConsideration} />
+            <SessionUnderConsiderationWithMockContent data={dataMockSessionUnderConsideration} />
           </div>
         </div>
       </div>
