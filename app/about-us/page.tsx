@@ -34,10 +34,10 @@ function AboutUsPage() {
     <LayoutMain classHeader="bg-[#043263]">
       <div className="site-content relative pt-24 ">
         <CoreValue />
-        {/* <OurStory /> */}
-        <div className="mt-8 w-full relative">
+        <OurStory />
+        {/* <div className="mt-8 w-full relative">
           <ListStepYear />
-        </div>
+        </div> */}
         <div className="mt-10 mb-10 w-full relative">
           <div className="container-custom m-auto px-4">
             <h2 className="w-full text-wrap text-center uppercase font-montserrat text-[#043263] font-extrabold text-xl md:text-[28px] leading-[54px]">

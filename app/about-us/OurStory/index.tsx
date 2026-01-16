@@ -13,12 +13,7 @@ function OurStory() {
         </h2>
         <div className="text-white font-normal  text-justify text-lg flex flex-col gap-4 pt-4 mb-4 md:pb-8">
           <p>
-            WELCOME TO Fotober US - Fotober US is your premier destination for top-tier photo editing,
-            video editing and rendering services for real estate. Our dedicated team of Vietnamese
-            professionals combines extensive expertise with cutting-edge tools developed through
-            years of customer interaction. We are not just about enhancing productivity and
-            efficiency; our goal is to surpass customer expectations, delivering products that truly
-            impress.
+            Welcome to Fotober US LLC. Fotober US LLC is the official U.S. entity of Fotober, providing top-tier photo editing, video editing, and rendering services for the real estate industry. Our dedicated team of Vietnamese and U.S.-based professionals combines extensive expertise with cutting-edge tools developed through years of customer collaboration. We are not just about enhancing productivity and efficiency; our goal is to surpass customer expectations by delivering products that truly impress.
           </p>
           <p>
             At Fotober US, we continuously listen and improve to offer the ultimate customer
