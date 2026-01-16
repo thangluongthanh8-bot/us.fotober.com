@@ -133,7 +133,7 @@ const dataFaq = [
 
 const title = '2D & 3D Floor Plans - Detailed Real Estate Layouts | Fotober US'
 const description =
-  'Create stunning 2D/3D floor plans for real estate with Fotober. Visualize layouts, compare properties, and plan renovations with accurate, detailed designs.'
+  'Create stunning 2D/3D floor plans for real estate with Fotober US. Visualize layouts, compare properties, and plan renovations with accurate, detailed designs.'
 
 export const metadata: Metadata = {
   title,
@@ -170,7 +170,7 @@ function FloorPlanRedraw() {
                 2D - 3D Floor plan
               </h2>
               <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-                Explore a new level of property visualization with Fotober’s 2D and 3D Floor Plan
+                Explore a new level of property visualization with Fotober US 2D and 3D Floor Plan
                 services. We transform standard layouts into sophisticated, detailed representations
                 that help buyers envision their future spaces.
               </p>

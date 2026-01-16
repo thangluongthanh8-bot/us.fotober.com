@@ -154,7 +154,7 @@ function Rendering() {
                 Virtual Rendering
               </h2>
               <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-                At Fotober US' Virtual Rendering in Real Estate Services, we
+                At Fotober US Virtual Rendering in Real Estate Services, we
                 transform blueprints into lifelike visualizations using
                 techniques like 3D modeling, texture mapping, lighting effects,
                 and virtual staging.

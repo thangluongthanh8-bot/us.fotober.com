@@ -107,7 +107,7 @@ const dataFaq = [
 
 const title = "Personal Branding Video & Photo Services | Fotober US";
 const description =
-  "Elevate your personal brand with Fotober US' expert video and photo services. Create professional, impactful visuals that boost your online presence.";
+  "Elevate your personal brand with Fotober US expert video and photo services. Create professional, impactful visuals that boost your online presence.";
 
 export const metadata: Metadata = {
   title,
@@ -144,7 +144,7 @@ function PersonalBrandingPage() {
               Personal Branding Editing
             </h2>
             <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-              At Fotober US' Personal Branding Editing Services, we enhance your
+              At Fotober US Personal Branding Editing Services, we enhance your
               public image using advanced video editing techniques like jump
               cuts, smooth transitions, slow-motion effects and color grading.
             </p>

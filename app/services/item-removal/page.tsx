@@ -111,7 +111,7 @@ const dataFaq = [
 
 const title = 'Item Removal Service for Real Estate Photos | Fotober US'
 const description =
-  'Fotober’s Item Removal Service cleans real estate photos by removing unwanted objects, enhancing visual appeal for stunning, professional images.'
+  'Fotober US Item Removal Service cleans real estate photos by removing unwanted objects, enhancing visual appeal for stunning, professional images.'
 
 export const metadata: Metadata = {
   title,
@@ -149,7 +149,7 @@ function ItemRemovalPage() {
                 Item Removal
               </h2>
               <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-                Maximize the potential of your real estate photos with Fotober’s Item Removal
+                Maximize the potential of your real estate photos with Fotober US Item Removal
                 service, expertly crafted to eliminate clutter and distractions for a polished,
                 professional look. Our advanced techniques allow us to seamlessly remove unwanted
                 objects, resulting in a smooth and natural finish.

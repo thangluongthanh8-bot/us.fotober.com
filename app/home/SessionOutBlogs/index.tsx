@@ -45,7 +45,7 @@ function SessionOutBlogs() {
       <div className="flex flex-row py-6 px-4 justify-center font-montserrat items-center bg-[#043263] ">
         <div className="flex flex-col justify-center items-center w-full md:container-custom m-auto">
           <LightSpeedInLeft>
-            <h2 className="text-[28px] text-white font-extrabold">OUR BLOGS</h2>
+            <h2 className="text-[28px] !text-white font-extrabold">OUR BLOGS</h2>
           </LightSpeedInLeft>
           <Fadein>
             <p className="text-base md:text-xl text-center text-white pb-6">

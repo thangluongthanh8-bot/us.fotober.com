@@ -184,7 +184,7 @@ function VirtualStagingPage() {
               Virtual Staging in Real Estate
             </h2>
             <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-              At Fotober US' Virtual Staging Services, we bring empty spaces to life with techniques
+              At Fotober US Virtual Staging Services, we bring empty spaces to life with techniques
               like furniture placement, color scheme adjustments, and décor matching.
             </p>
             <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">

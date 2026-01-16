@@ -259,7 +259,7 @@ function ImageEnhancementPage() {
               </h2>
               <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
                 <span className="font-bold">
-                  Transform your listings with Fotober’s Real Estate Photo Editing
+                  Transform your listings with Fotober US Real Estate Photo Editing
                 </span>{' '}
                 service, where we turn ordinary property photos into high-quality, eye-catching
                 images that capture your property’s true essence. Our expert editing techniques
@@ -277,7 +277,7 @@ function ImageEnhancementPage() {
 
             <TitleH3 title="What are the benefits?" />
             <h2 className="w-full text-wrap text-center uppercase font-montserrat text-[#043263] font-extrabold text-lg md:text-[23px] md:leading-[45px] my-0">
-              Sell Faster with Fotober’s Real Estate Photo Editing Magic!
+              Sell Faster with Fotober US Real Estate Photo Editing Magic!
             </h2>
             <div
               data-test-id="list-description-service"

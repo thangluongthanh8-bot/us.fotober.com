@@ -101,7 +101,7 @@ const dataFaq = [
 
 const title = 'Car Video Editing Services to Impress and Inspire | Fotober US'
 const description =
-  'Enhance your car videos with Fotober US\' Car Video Editing service. Use dynamic shots, special effects, and professional sound design to make them stand out.'
+  'Enhance your car videos with Fotober US Car Video Editing service. Use dynamic shots, special effects, and professional sound design to make them stand out.'
 
 export const metadata: Metadata = {
   title,
@@ -137,7 +137,7 @@ function CarVideoEditingPage() {
               Car video editing
             </h2>
             <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-              At Fotober US' Car Video Editing Services, we use advanced techniques like glow effects,
+              At Fotober US Car Video Editing Services, we use advanced techniques like glow effects,
               logo transitions, speed ramp, saber lines, and logo spins to enhance the power, speed,
               and luxury of your vehicle.
             </p>

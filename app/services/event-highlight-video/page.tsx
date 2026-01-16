@@ -131,7 +131,7 @@ function EventRecapPage() {
               Event Recap
             </h2>
             <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-              Fotober US' Event Recap service transforms raw event footage into polished, engaging
+              Fotober US Event Recap service transforms raw event footage into polished, engaging
               videos that capture the essence of your event. This service uses advanced editing
               techniques for noise and judder removal, slow motion, emotional emphasis, color
               grading, and people highlighting. Every key moment, from highlights to atmosphere, is

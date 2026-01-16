@@ -81,7 +81,7 @@ const dataFaq = [
 
 const title = '360° Image Enhancement for Real Estate | Fotober US'
 const description =
-  'Enhance real estate listings with Fotober US\' 360° image enhancement. Brighten rooms, sharpen details, and showcase true colors to captivate buyers'
+  'Enhance real estate listings with Fotober US 360° image enhancement. Brighten rooms, sharpen details, and showcase true colors to captivate buyers'
 
 export const metadata: Metadata = {
   title,
@@ -139,7 +139,7 @@ function Image360EnhancementPage() {
               360° Image Enhancement
             </h2>
             <p className="text-base text-justify text-[#000] max-w-[800px] m-auto mt-1">
-              Welcome to Fotober’s 360° Enhancement service, where we turn standard 360° photos into
+              Welcome to Fotober US 360° Enhancement service, where we turn standard 360° photos into
               stunning visual experiences. Our skilled team uses advanced editing techniques to
               seamlessly stitch together multiple images, creating a flawless 3D representation that
               showcases every detail with vibrant clarity. This service not only enhances the beauty
