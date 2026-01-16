@@ -13,7 +13,7 @@ function OurStory() {
         </h2>
         <div className="text-white font-normal  text-justify text-lg flex flex-col gap-4 pt-4 mb-4 md:pb-8">
           <p>
-            WELCOME TO FOTOBER - Fotober is your premier destination for top-tier photo editing,
+            WELCOME TO Fotober US - Fotober US is your premier destination for top-tier photo editing,
             video editing and rendering services for real estate. Our dedicated team of Vietnamese
             professionals combines extensive expertise with cutting-edge tools developed through
             years of customer interaction. We are not just about enhancing productivity and
@@ -21,21 +21,21 @@ function OurStory() {
             impress.
           </p>
           <p>
-            At Fotober, we continuously listen and improve to offer the ultimate customer
+            At Fotober US, we continuously listen and improve to offer the ultimate customer
             experience. We understand the challenges faced by photographers, whether it&apos;s
             juggling tight schedules or navigating the complexities of photo editing. That&apos;s
-            why we established Fotober – to provide a comprehensive solution to these challenges.
+            why we established Fotober US – to provide a comprehensive solution to these challenges.
           </p>
           <p>
-            With a team of seasoned editors and consultants, Fotober prides itself on delivering
+            With a team of seasoned editors and consultants, Fotober US prides itself on delivering
             exceptional editing results. We ensure superior quality, swift turnaround times, and
             affordability, making us your ideal partner for all your photo editing needs.
           </p>
           <p>
-            Driven by the growing demand for image editing services, Fotober is expanding rapidly.
+            Driven by the growing demand for image editing services, Fotober US is expanding rapidly.
             With a capacity to process over 20,000 photos per day, we cater to individual
             photographers and large corporations alike, delivering outstanding outcomes every time.
-            Trust Fotober to simplify your workflow – you capture the photos, we perfect them.
+            Trust Fotober US to simplify your workflow – you capture the photos, we perfect them.
           </p>
         </div>
       </div>

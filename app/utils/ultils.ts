@@ -67,7 +67,7 @@ export const listChildPhotoEditing = [
     PhotoSphereUrl: undefined,
     videoThumbId: null,
     description:
-      'Automatically enhance your property photos with Fotober US\' Real Estate Photo Editing',
+      'Automatically enhance your property photos with Fotober US Real Estate Photo Editing',
     description1:
       'High-quality professional photos are crucial in buyers’ decision-making process. Our team of experienced editors will put your property in the best light.',
   },
@@ -365,7 +365,7 @@ export const dataMockSessionUnderConsideration = [
     title: 'James',
     service: 'Real Estate Photo Editing',
     comment:
-      'I recently tried Fotober US\' real estate photo editing service, and I was blown away by how they transformed my listing photos. They corrected the lighting, enhanced the colors, and made each room look bright and spacious. My clients immediately noticed the difference!',
+      'I recently tried Fotober US real estate photo editing service, and I was blown away by how they transformed my listing photos. They corrected the lighting, enhanced the colors, and made each room look bright and spacious. My clients immediately noticed the difference!',
   },
   {
     image: Icon02,
@@ -379,7 +379,7 @@ export const dataMockSessionUnderConsideration = [
     title: 'Michael',
     service: 'Day to Dusk',
     comment:
-      'As a realtor, I\'m especially impressed with Fotober US\' day-to-dusk service. They turned my daytime exterior shots into gorgeous twilight scenes, which captured tons of buyer interest. It\'s a small touch that makes a big impact.',
+      'As a realtor, I\'m especially impressed with Fotober US day-to-dusk service. They turned my daytime exterior shots into gorgeous twilight scenes, which captured tons of buyer interest. It\'s a small touch that makes a big impact.',
   },
   {
     image: Icon04,
@@ -400,7 +400,7 @@ export const dataMockSessionUnderConsideration = [
     title: 'Christopher',
     service: 'Floor Plan Redraw',
     comment:
-      'I used Fotober US\' floor plan redraw service for a property listing, and the accuracy was on point. It made it super easy for me to share clear, detailed floor plans with prospective buyers. Saved me a lot of time and hassle!',
+      'I used Fotober US floor plan redraw service for a property listing, and the accuracy was on point. It made it super easy for me to share clear, detailed floor plans with prospective buyers. Saved me a lot of time and hassle!',
   },
   {
     image: Icon07,

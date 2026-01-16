@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 
 const title = 'Contact Fotober US - Real Estate Photo And Video Editing'
 const description =
-  'Contact Fotober 24/7 for consultation on real estate photo and video editing services or to get precise and completely free answers to your questions.'
+  'Contact Fotober US 24/7 for consultation on real estate photo and video editing services or to get precise and completely free answers to your questions.'
 
 export const metadata: Metadata = {
   title,
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title,
     description,
     type: 'website',
-    url: 'https://www.fotober.com',
+    url: 'https://us.fotober.com',
     images: `${process.env.BASE_URL}/thumb/image_thumb.png`,
   },
   twitter: {
@@ -29,7 +29,7 @@ function ContactPage() {
     <LayoutMain>
       <div className="w-full h-full bg-white text-[#1A1A1A] overflow-hidden mt-[-112px]">
         <SessionBgContact />
-        <h1 className="opacity-0">Connect with Fotober!</h1>
+        <h1 className="opacity-0">Connect with Fotober US !</h1>
         <ContactFrom />
       </div>
     </LayoutMain>

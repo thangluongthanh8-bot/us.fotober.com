@@ -10,7 +10,7 @@ import "swiper/css";
 
 const title = 'About Us - Fotober US | Real Estate Photo And Video Editing.'
 const description =
-  'Discover Fotober, a leader in real estate photo and video services. Learn about our mission, expertise, and how we help properties stand out visually.'
+  'Discover Fotober US, a leader in real estate photo and video services. Learn about our mission, expertise, and how we help properties stand out visually.'
 
 export const metadata: Metadata = {
   title,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title,
     description,
     type: 'website',
-    url: 'https://www.fotober.com',
+    url: 'https://us.fotober.com',
     images: `${process.env.BASE_URL}/thumb/image_thumb.png`,
   },
   twitter: {
@@ -34,7 +34,7 @@ function AboutUsPage() {
     <LayoutMain classHeader="bg-[#043263]">
       <div className="site-content relative pt-24 ">
         <CoreValue />
-        <OurStory />
+        {/* <OurStory /> */}
         <div className="mt-8 w-full relative">
           <ListStepYear />
         </div>

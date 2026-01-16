@@ -49,18 +49,18 @@ function ListStepYear() {
         <div className="flex flex-col gap-12 w-[45%]">
           <InfoYear
             title="2016"
-            description=" Founded in Hanoi, Vietnam by five image editing experts, Fotober begins offering basic
+            description=" Founded in Hanoi, Vietnam by five image editing experts, Fotober US begins offering basic
               editing services to 50 clients per month."
           />
           <InfoImage imageData={imageYear2018} />
           <InfoYear
             title="2020"
-            description="Fotober shifts focus to comprehensive 360 image enhancement and video editing."
+            description="Fotober US shifts focus to comprehensive 360 image enhancement and video editing."
           />
           <InfoImage imageData={imageYear2022} />
           <InfoYear
             title="2024"
-            description="Workforce grows to 150 employees as Fotober expands services into new markets and
+            description="Workforce grows to 150 employees as Fotober US expands services into new markets and
               incorporates AI-powered tools for increased efficiency."
           />
         </div>
@@ -111,7 +111,7 @@ function ListStepYear() {
           <InfoImage imageData={imageYear2020} />
           <InfoYear
             title="2022"
-            description="With over 100 staff, Fotober serves 10,000 clients worldwide annually, solidifying its
+            description="With over 100 staff, Fotober US serves 10,000 clients worldwide annually, solidifying its
               position in the market."
           />
           <InfoImage imageData={imageYear2024} />
@@ -126,7 +126,7 @@ function ListStepYear() {
               2016
             </div>
             <p className="text-[#000] text-lg text-justify">
-              Founded in Hanoi, Vietnam by five image editing experts, Fotober begins offering basic
+              Founded in Hanoi, Vietnam by five image editing experts, Fotober US begins offering basic
               editing services to 50 clients per month.
             </p>
             <div className="w-full mt-2 h-auto card-image rounded-[24px]">
@@ -162,7 +162,7 @@ function ListStepYear() {
               2020
             </div>
             <p className="text-[#000] text-lg text-justify">
-              Fotober shifts focus to comprehensive 360 image enhancement and video editing.
+              Fotober US shifts focus to comprehensive 360 image enhancement and video editing.
             </p>
             <div className="w-full mt-2 h-auto card-image rounded-[24px]">
               <ZoomImageWrapper src={imageYear2020}>
@@ -179,7 +179,7 @@ function ListStepYear() {
               2022
             </div>
             <p className="text-[#000] text-lg text-justify">
-              With over 100 staff, Fotober serves 10,000 clients worldwide annually, solidifying its
+              With over 100 staff, Fotober US serves 10,000 clients worldwide annually, solidifying its
               position in the market.
             </p>
             <div className="w-full mt-2 h-auto card-image rounded-[24px]">
@@ -197,7 +197,7 @@ function ListStepYear() {
               2024
             </div>
             <p className="text-[#000] text-lg text-justify">
-              Workforce grows to 150 employees as Fotober expands services into new markets and
+              Workforce grows to 150 employees as Fotober US expands services into new markets and
               incorporates AI-powered tools for increased efficiency.
             </p>
             <div className="w-full mt-2 h-auto card-image rounded-[24px]">

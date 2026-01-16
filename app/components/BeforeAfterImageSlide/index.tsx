@@ -28,11 +28,11 @@ function BeforeAfterImageSlide({
       <ReactBeforeSliderComponent
         firstImage={{
           imageUrl: beforeImageUrl,
-          alt: altBefore || 'fotober',
+          alt: altBefore || 'Fotober US',
         }}
         secondImage={{
           imageUrl: afterImageUrl,
-          alt: altAfter || 'fotober',
+          alt: altAfter || 'Fotober US',
         }}
         className="before-after-slider w-full h-full object-contain"
         delimiterIconStyles={{

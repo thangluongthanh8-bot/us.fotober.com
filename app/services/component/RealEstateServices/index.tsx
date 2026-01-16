@@ -104,7 +104,7 @@ const RealEstateServices = () => {
           descInView ? 'animate__animated animate__fadeIn' : 'opacity-0',
         )}
       >
-        Fotober delivers real estate media services that empower photographers, videographers,
+        Fotober US delivers real estate media services that empower photographers, videographers,
         <br /> architects, and realtors to showcase properties at their best.
       </p>
 

@@ -94,7 +94,7 @@ const SectionWhyLLC = () => {
           Serious Studios Don’t “Outsource”— They Operationalize
         </h3>
         <p className="max-w-4xl mx-auto text-base md:text-1xl text-gray-300 italic mb-16 px-4">
-          Fotober was built to merge Vietnam’s production efficiency with
+          Fotober US was built to merge Vietnam’s production efficiency with
           US-level accountability.
           <br className="hidden md:block" />
           This is not a marketplace - It’s a managed operation.
