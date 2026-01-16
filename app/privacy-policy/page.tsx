@@ -5,7 +5,7 @@ import React from 'react'
 export const metadata: Metadata = {
   title: 'Privacy Policy and Data Protection | Fotober US',
   description:
-    'Discover how Fotober collects, uses, and protects your personal data. Our Privacy Policy ensures your information stays secure while using our services.',
+    'Discover how Fotober US collects, uses, and protects your personal data. Our Privacy Policy ensures your information stays secure while using our services.',
 }
 
 function PrivacyPolicyPage() {
@@ -18,7 +18,7 @@ function PrivacyPolicyPage() {
           </h1>
           <div className="mt-10  wp-bp-content-width text-justify   text-base ">
             <p>
-              This website is owned and operated by Fotober.com and will be referred to as “We”,
+              This website is owned and operated by us.Fotober.com and will be referred to as “We”,
               “our” and “us” in this Internet Privacy Policy. By using this site, you agree to the
               Internet Privacy Policy of this web site (“the web site”), which is set out on this
               web site page. The Internet Privacy Policy relates to the collection and use of

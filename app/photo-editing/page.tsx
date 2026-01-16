@@ -96,7 +96,7 @@ const ListImage = [
 
 const title = 'Photo Editing Services for Real Estate | Fotober US'
 const description =
-  'Enhance your photos with Fotober US\' professional photo editing services. Perfect for real estate, products, or personal images that captivate and impress.'
+  'Enhance your photos with Fotober US professional photo editing services. Perfect for real estate, products, or personal images that captivate and impress.'
 
 export const metadata: Metadata = {
   title,
@@ -105,7 +105,7 @@ export const metadata: Metadata = {
     title,
     description,
     type: 'website',
-    url: 'https://www.fotober.com',
+    url: 'https://us.fotober.com',
     images: `${process.env.BASE_URL}/thumb/image_thumb.png`,
   },
   twitter: {
@@ -127,7 +127,7 @@ function PhotoEditingPage() {
         <div className="py-7">
           <WhatDoWeDo
             title="PHOTO EDITING?"
-            description1="Fotober’s Real Estate Photo Editing service transforms property images into visually
+            description1="Fotober US Real Estate Photo Editing service transforms property images into visually
         striking masterpieces with expert techniques and attention to detail. From advanced color
         correction, sky replacement, and virtual twilight to object removal, HDR blending, and
         perspective adjustments, we ensure every photo highlights the property’s best features."

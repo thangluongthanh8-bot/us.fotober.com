@@ -42,7 +42,7 @@ const services = [
 ]
 const title = 'Architecture Planning & Virtual Services | Fotober US'
 const description =
-  'Transform your architectural projects with Fotober. Expert virtual planning, 3D modeling, and design visualization to bring your ideas to life.'
+  'Transform your architectural projects with Fotober US. Expert virtual planning, 3D modeling, and design visualization to bring your ideas to life.'
 
 export const metadata: Metadata = {
   title,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title,
     description,
     type: 'website',
-    url: 'https://www.fotober.com',
+    url: 'https://us.fotober.com',
     images: `${process.env.BASE_URL}/thumb/image_thumb.png`,
   },
   twitter: {
@@ -73,8 +73,8 @@ function ArchitecturePlanningAndVirtualServices() {
         <div className="py-7">
           <WhatDoWeDo
             title="ARCHITECTURE PLANNING AND VIRTUAL SERVICES"
-            description1="Fotober’s Architecture Planning & Virtual Service brings your designs to life with precision, creativity, and cutting-edge technology. Whether you need detailed 2D and 3D floor plans, immersive virtual staging, realistic rendering, or architectural visualization, our experts craft lifelike visuals that enhance property marketing and design presentations, making projects more engaging and market-ready."
-            description2="At Fotober - we create compelling, interactive experiences that inspire clients, streamline decision-making, and turn ideas into reality."
+            description1="Fotober US Architecture Planning & Virtual Service brings your designs to life with precision, creativity, and cutting-edge technology. Whether you need detailed 2D and 3D floor plans, immersive virtual staging, realistic rendering, or architectural visualization, our experts craft lifelike visuals that enhance property marketing and design presentations, making projects more engaging and market-ready."
+            description2="At Fotober US - we create compelling, interactive experiences that inspire clients, streamline decision-making, and turn ideas into reality."
           />
         </div>
         <div className="py-7">

@@ -12,7 +12,7 @@ import { dataMockSessionUnderConsideration } from '../utils/ultils'
 
 const title = 'Video Editing Services for Real Estate | Fotober US'
 const description =
-  "Transform your footage with Fotober US' professional video editing services. Perfect for real estate, cars, events, and personal branding videos."
+  "Transform your footage with Fotober US professional video editing services. Perfect for real estate, cars, events, and personal branding videos."
 
 export const metadata: Metadata = {
   title,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title,
     description,
     type: 'website',
-    url: 'https://www.fotober.com',
+    url: 'https://us.fotober.com',
     images: `${process.env.BASE_URL}/thumb/image_thumb.png`,
   },
   twitter: {
@@ -74,8 +74,8 @@ function VideoEditingPage() {
         <div className="py-7">
           <WhatDoWeDo
             title="VIDEO EDITING?"
-            description1="Looking to transform your raw footage into stunning, high-impact videos? Fotober’s Video Editing Service brings your vision to life with expert editing. Whether you need real estate showcases, car commercials or personal branding video, our team enhances every frame with precise color grading, cinematic transitions, motion tracking, and seamless audio synchronization."
-            description2="At Fotober - We don’t just edit - we transform raw footage into captivating stories that connect with your audience, making your brand stand out in a crowded digital world."
+            description1="Looking to transform your raw footage into stunning, high-impact videos? Fotober US Video Editing Service brings your vision to life with expert editing. Whether you need real estate showcases, car commercials or personal branding video, our team enhances every frame with precise color grading, cinematic transitions, motion tracking, and seamless audio synchronization."
+            description2="At Fotober US - We don’t just edit - we transform raw footage into captivating stories that connect with your audience, making your brand stand out in a crowded digital world."
           />
         </div>
         <div className="py-7">
